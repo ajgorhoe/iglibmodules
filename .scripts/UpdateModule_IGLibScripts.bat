@@ -27,11 +27,11 @@ rem Reset the error level (by running an always successfull command):
 ver > nul
 
 rem Repository update parameters:
-set ModuleDirRelative=../IGLibCore
+set ModuleDirRelative=../IGLibScripts
 set CheckoutBranch=main
-set RepositoryAddress=https://github.com/ajgorhoe/IGLib.modules.IGLibCore.git
+set RepositoryAddress=https://github.com/ajgorhoe/IGLib.modules.IGLibScripts.git
 set RepositoryAddressSecondary=
-set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\misc\iglib_modules\IGLibCore\
+set RepositoryAddressLocal=d:\backup_sync\bk_code\git\ig\misc\iglib_modules\IGLibScripts\
 set Remote=origin
 set RemoteSecondary=
 set RemoteLocal=local
