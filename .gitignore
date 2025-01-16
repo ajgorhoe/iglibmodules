@@ -12,3 +12,20 @@
 /IGLibScripts1
 /IGLibScripts11
 
+
+# IGLibScripting: The basic low level IGLib library.
+/IGLibScripting
+/IGLibScripting1
+/IGLibScripting11
+
+
+# IGLibScriptingCs: The basic low level IGLib library.
+/IGLibScriptingCs
+/IGLibScriptingCs1
+/IGLibScriptingCs11
+
+
+# IGLibSandbox: The development sandbox for IGLib libraries.
+/IGLibSandbox
+/IGLibSandbox1
+/IGLibSandbox11
