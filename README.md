@@ -5,7 +5,7 @@ This is a container repository used to clone and build the new IGLib modules (as
 
 **Contents**:
 
-* [ScriAbout IGLib Container Repository](#about-iglib-container-repository)
+* [About IGLib Container Repository](#about-iglib-container-repository)
 * **External**:
   * [Wiki - IGLib](https://github.com/ajgorhoe/wiki.IGLib/tree/main/IGLib) (private repository)
     * [Wiki - Scripting (directory)](https://github.com/ajgorhoe/wiki.IGLib/tree/main/IGLib/scripting)
