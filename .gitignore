@@ -1,5 +1,5 @@
 
-
+*.bak
 
 # IGLibCore: The basic low level IGLib library.
 /IGLibCore
@@ -29,3 +29,4 @@
 /IGLibSandbox
 /IGLibSandbox1
 /IGLibSandbox11
+
