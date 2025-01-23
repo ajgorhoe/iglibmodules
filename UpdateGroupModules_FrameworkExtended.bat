@@ -40,7 +40,7 @@ rem scripts have already been updated to the new modus operandi).
 rem First, call the script for updating the basic IGLib Framework modules:
 call "%~dp0\UpdateGroupModules_Basic.bat
 
-rem Then, call other update scripts that belong to this group:
+rem Then, call other update remaining scripts that belong to this group:
 
 call "%~dp0\scripts\IGLibFramework\UpdateModule_shelldev.bat" "" "" %*
 call "%~dp0\scripts\IGLibFramework\UpdateModule_iglearn.bat" "" "" %*
