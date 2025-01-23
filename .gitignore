@@ -30,3 +30,37 @@
 /IGLibSandbox1
 /IGLibSandbox11
 
+
+# Lagacy IGLib Framework repositories:
+
+# iglib: base IGLib Framework's libraries
+/iglib
+/iglib1
+/iglib11
+
+# iglibexternal: container of external dependencies for IGLib Framework
+/iglibexternal
+/iglibexternal1
+/iglibexternal11
+
+# iglearn: learning and research repository, contains e.g. collections of 
+# various groups of repositories with their cloning scripts (eg. for 
+# scripting, 2D and 3D graphics, numerics, optimization, image processing,
+# machine learning, UI frameworks, code editors, cryptography
+/iglearn
+/iglearn1
+/iglearn11
+
+# igsandbox: sandbox development repository for IGLib Framework
+/igsandbox
+/igsandbox1
+/igsandbox11
+
+
+
+
+
+
+
+
+
