@@ -50,8 +50,8 @@
 
 # shelldev
 /shelldev
-shelldev1
-shelldev11
+/shelldev1
+/shelldev11
 
 # iglearn: learning and research repository, contains e.g. collections of 
 # various groups of repositories with their cloning scripts (eg. for 
