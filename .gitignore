@@ -43,6 +43,16 @@
 /iglibexternal1
 /iglibexternal11
 
+#igsolutions: contains IGLib solutions
+/igsolutions
+/igsolutions1
+/igsolutions11
+
+# shelldev
+/shelldev
+shelldev1
+shelldev11
+
 # iglearn: learning and research repository, contains e.g. collections of 
 # various groups of repositories with their cloning scripts (eg. for 
 # scripting, 2D and 3D graphics, numerics, optimization, image processing,
@@ -56,11 +66,14 @@
 /igsandbox1
 /igsandbox11
 
+# igtest: a set of unit and other tests for the legacy IGLib Framework
+/igtest
+/igtest1
+/igtest11
 
-
-
-
-
-
+#unittests
+/unittests
+/unittests1
+/unittests11
 
 
