@@ -13,7 +13,7 @@ ver > nul
 rem Bootstrap scripting such that update scripts are available:
 rem Important: bootstrapping must be called before settings, otherwise
 rem it would overrite the essential repository settings.
-set BootStrapScripting=%~dp0\scripts\0bootstrappingscripts\BootStrapScripting.bat
+set BootStrapScripting=%~dp0\_scripts\0bootstrappingscripts\BootStrapScripting.bat
 echo.
 echo SCRIPT: BootStrapScripting: "%BootStrapScripting%"
 echo.
@@ -36,13 +36,13 @@ rem
 rem Passing parameters in the way they are passed is kept in order to
 rem support legacy update scripts (although in this directory, all
 rem scripts have already been updated to the new modus operandi).
-call "%~dp0\scripts\UpdateModule_IGLibCore.bat" "" "" %*
-call "%~dp0\scripts\UpdateModule_IGLibScripts.bat" "" "" %*
+call "%~dp0\_scripts\UpdateModule_IGLibCore.bat" "" "" %*
+call "%~dp0\_scripts\UpdateModule_IGLibScripts.bat" "" "" %*
 
-call "%~dp0\scripts\UpdateModule_IGLibScripting.bat" "" "" %*
-call "%~dp0\scripts\UpdateModule_IGLibScriptingCs.bat" "" "" %*
+call "%~dp0\_scripts\UpdateModule_IGLibScripting.bat" "" "" %*
+call "%~dp0\_scripts\UpdateModule_IGLibScriptingCs.bat" "" "" %*
 
-call "%~dp0\scripts\UpdateModule_IGLibSandbox.bat" "" "" %*
+call "%~dp0\_scripts\UpdateModule_IGLibSandbox.bat" "" "" %*
 
 
 :finalize

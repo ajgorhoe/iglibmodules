@@ -13,7 +13,7 @@ ver > nul
 rem Bootstrap scripting such that update scripts are available:
 rem Important: bootstrapping must be called before settings, otherwise
 rem it would overrite the essential repository settings.
-set BootStrapScripting=%~dp0\scripts\0bootstrappingscripts\BootStrapScripting.bat
+set BootStrapScripting=%~dp0\_scripts\0bootstrappingscripts\BootStrapScripting.bat
 echo.
 echo SCRIPT: BootStrapScripting: "%BootStrapScripting%"
 echo.
@@ -42,12 +42,12 @@ call "%~dp0\UpdateGroupModules_Basic.bat
 
 rem Then, call other update remaining scripts that belong to this group:
 
-call "%~dp0\scripts\IGLibFramework\UpdateModule_shelldev.bat" "" "" %*
-call "%~dp0\scripts\IGLibFramework\UpdateModule_iglearn.bat" "" "" %*
-call "%~dp0\scripts\IGLibFramework\UpdateModule_igsandbox.bat" "" "" %*
+call "%~dp0\_scripts\IGLibFramework\UpdateModule_shelldev.bat" "" "" %*
+call "%~dp0\_scripts\IGLibFramework\UpdateModule_iglearn.bat" "" "" %*
+call "%~dp0\_scripts\IGLibFramework\UpdateModule_igsandbox.bat" "" "" %*
 
-rem call "%~dp0\scripts\IGLibFramework\" "" "" %*
-rem call "%~dp0\scripts\IGLibFramework\" "" "" %*
+rem call "%~dp0\_scripts\IGLibFramework\" "" "" %*
+rem call "%~dp0\_scripts\IGLibFramework\" "" "" %*
 
 
 :finalize
