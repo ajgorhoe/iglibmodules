@@ -38,7 +38,7 @@ rem support legacy update scripts (although in this directory, all
 rem scripts have already been updated to the new modus operandi).
 
 rem First, call the script for updating the extended IGLib Framework modules:
-call "%~dp0\UpdateGroupModules_Extended.bat
+call "%~dp0\UpdateGroupModules_FrameworkExtended.bat
 
 rem Then, call other update the remaining scripts that belong to this group:
 
