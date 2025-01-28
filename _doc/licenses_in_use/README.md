@@ -7,3 +7,6 @@ This directory contains the most common licenses that are used for IGLib librari
 * [IGLib Restricted Use License](./LICENSE_IGLibRestrictedUse.md)
 * [MIT License](./LICENSE_MIT.md)
 
+**See also**:
+* [IGLib Wiki: Licensing](https://github.com/ajgorhoe/wiki.IGLib/blob/main/IGLib/general/Licensing/Licensing.md) (private repository)
+  * [IGLib Wiki: License Samples](https://github.com/ajgorhoe/wiki.IGLib/blob/main/IGLib/general/Licensing/LicenseSamples/LicenseSamples.md)
