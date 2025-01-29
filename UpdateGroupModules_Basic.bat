@@ -44,6 +44,8 @@ call "%~dp0\_scripts\UpdateModule_IGLibScriptingCs.bat" "" "" %*
 
 call "%~dp0\_scripts\UpdateModule_IGLibSandbox.bat" "" "" %*
 
+call "%~dp0\_scripts\UpdateModule_IGLibEventAggregator.bat" "" "" %*
+
 
 :finalize
 

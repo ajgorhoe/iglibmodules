@@ -1,37 +1,42 @@
 
 *.bak
 
+# output: output directory of the legacy IGLib frameworks
+/output
+/output1
+/output11
+
 # IGLibCore: The basic low level IGLib library.
 /IGLibCore
 /IGLibCore1
 /IGLibCore11
-
 
 # IGLibScripts: The basic low level IGLib library.
 /IGLibScripts
 /IGLibScripts1
 /IGLibScripts11
 
-
 # IGLibScripting: The basic low level IGLib library.
 /IGLibScripting
 /IGLibScripting1
 /IGLibScripting11
-
 
 # IGLibScriptingCs: The basic low level IGLib library.
 /IGLibScriptingCs
 /IGLibScriptingCs1
 /IGLibScriptingCs11
 
-
 # IGLibSandbox: The development sandbox for IGLib libraries.
 /IGLibSandbox
 /IGLibSandbox1
 /IGLibSandbox11
 
+# IGLibEventAggregator: The development sandbox for IGLib libraries.
+/IGLibEventAggregator
+/IGLibEventAggregator1
+/IGLibEventAggregator11
 
-# Lagacy IGLib Framework repositories:
+# Legacy IGLib Framework repositories:
 
 # iglib: base IGLib Framework's libraries
 /iglib
