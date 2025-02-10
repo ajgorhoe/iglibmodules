@@ -11,10 +11,13 @@
 /IGLibCore1
 /IGLibCore11
 
-# IGLibScripts: The basic low level IGLib library.
+# IGLibScripts: Helpful scripts.
 /IGLibScripts
 /IGLibScripts1
 /IGLibScripts11
+
+# IGLibScriptsPS: Fork of IGLibScripts where PowerShell scripts are retained.
+/IGLibScriptsPS
 
 # IGLibScripting: The basic low level IGLib library.
 /IGLibScripting
