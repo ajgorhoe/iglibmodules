@@ -46,6 +46,10 @@ call "%~dp0\_scripts\UpdateModule_IGLibSandbox.bat" "" "" %*
 
 call "%~dp0\_scripts\UpdateModule_IGLibEventAggregator.bat" "" "" %*
 
+rem To Do later: move repositories below to another place.
+
+call "%~dp0\_scripts\UpdateModule_IGLibScriptsPS.bat" "" "" %*
+
 
 :finalize
 
