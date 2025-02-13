@@ -61,6 +61,11 @@
 /shelldev1
 /shelldev11
 
+# iglibapp
+/iglibapp
+/iglibapp1
+/iglibapp11
+
 # iglearn: learning and research repository, contains e.g. collections of 
 # various groups of repositories with their cloning scripts (eg. for 
 # scripting, 2D and 3D graphics, numerics, optimization, image processing,
