@@ -42,6 +42,7 @@ call "%~dp0\UpdateGroupModules_FrameworkBasic.bat
 
 rem Then, call other update remaining scripts that belong to this group:
 
+call "%~dp0\_scripts\IGLibFramework\UpdateModule_iglibapp.bat" "" "" %*
 call "%~dp0\_scripts\IGLibFramework\UpdateModule_shelldev.bat" "" "" %*
 call "%~dp0\_scripts\IGLibFramework\UpdateModule_iglearn.bat" "" "" %*
 call "%~dp0\_scripts\IGLibFramework\UpdateModule_igsandbox.bat" "" "" %*
