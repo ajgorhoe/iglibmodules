@@ -24,8 +24,7 @@ ver > nul
 
 rem Repository update parameters:
 set ModuleDirRelative=../../iglibexternal
-set CheckoutBranch=feature/25_02_DependenciesAndProjectsHarmonization
-# master
+set CheckoutBranch=master
 set RepositoryAddress=https://github.com/ajgorhoe/IGLib.workspace.base.iglibexternal.git
 set RepositoryAddressSecondary=https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.workspace.base.iglibexternal.git
 set RepositoryAddressLocal=d:/backup_sync/bk_code/git/ig/workspace/base/iglibexternal.git
