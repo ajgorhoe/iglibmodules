@@ -26,5 +26,5 @@ Write-Host "`nUpdating igsolutions:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igsolutions.ps1")
 
 
-Write-Host "  ... updating extended IGLib Framework repositories complete.`n`n"
+Write-Host "  ... updating basic IGLib Framework repositories completed.`n`n"
 
