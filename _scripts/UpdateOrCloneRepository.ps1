@@ -17,7 +17,7 @@
 .NOTES
     Copyright © Igor Grešovnik.
     Part of IGLib.
-    https://github.com/ajgorhoe/IGLib.modules.IGLibSandbox/
+    https://github.com/ajgorhoe/IGLib.modules.IGLibScripts
 	
 
 .EXAMPLE
