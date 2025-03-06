@@ -27,5 +27,5 @@ Write-Host "`nUpdating IGLibSandbox:"
 Write-Host "`nUpdating IGLibEventAggregator:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibEventAggregator.ps1")
 
-Write-Host "  ... updating IGLibSandbox dependencies complete.`n`n"
+Write-Host "  ... updating basuc repositoris in iglibmodules/ completed.`n`n"
 

@@ -19,6 +19,9 @@
 # IGLibScriptsPS: Fork of IGLibScripts where PowerShell scripts are retained.
 /IGLibScriptsPS
 
+# IGLibScriptsEXP: Fork of IGLibScripts - experimental (maybe deleted i the future).
+/IGLibScriptsEXP
+
 # IGLibScripting: The basic low level IGLib library.
 /IGLibScripting
 /IGLibScripting1
