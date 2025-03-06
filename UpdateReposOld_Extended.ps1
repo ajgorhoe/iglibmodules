@@ -24,6 +24,9 @@ Write-Host "`nUpdating iglibapp:"
 Write-Host "`nUpdating shelldev:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_shelldev.ps1")
 
+Write-Host "`nUpdating data:"
+& $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_data.ps1")
+
 Write-Host "`nUpdating iglearn:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_iglearn.ps1")
 

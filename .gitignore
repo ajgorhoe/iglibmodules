@@ -69,6 +69,11 @@
 /iglibapp1
 /iglibapp2
 
+# data
+/data
+/data1
+/data2
+
 # iglearn: learning and research repository, contains e.g. collections of 
 # various groups of repositories with their cloning scripts (eg. for 
 # scripting, 2D and 3D graphics, numerics, optimization, image processing,
