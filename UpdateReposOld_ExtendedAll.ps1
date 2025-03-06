@@ -24,6 +24,13 @@ Write-Host "`nUpdating unittests:"
 Write-Host "`nUpdating igtest:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igtest.ps1")
 
+Write-Host "`nUpdating workspaceprojects:"
+& $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_workspaceprojects.ps1")
+
+# # clone of workspaceproject_all (below) is not included (this is a very large project)
+# Write-Host "`nUpdating workspaceprojects_all:"
+# & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_workspaceprojects_all.ps1")
+
 
 
 Write-Host "  ... updating all IGLib Framework repositories complete.`n`n"
