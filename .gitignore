@@ -4,17 +4,17 @@
 # output: output directory of the legacy IGLib frameworks
 /output
 /output1
-/output11
+/output2
 
 # IGLibCore: The basic low level IGLib library.
 /IGLibCore
 /IGLibCore1
-/IGLibCore11
+/IGLibCore2
 
 # IGLibScripts: Helpful scripts.
 /IGLibScripts
 /IGLibScripts1
-/IGLibScripts11
+/IGLibScripts2
 
 # IGLibScriptsPS: Fork of IGLibScripts where PowerShell scripts are retained.
 /IGLibScriptsPS
@@ -30,44 +30,44 @@
 # IGLibScriptingCs: The basic low level IGLib library.
 /IGLibScriptingCs
 /IGLibScriptingCs1
-/IGLibScriptingCs11
+/IGLibScriptingCs2
 
 # IGLibSandbox: The development sandbox for IGLib libraries.
 /IGLibSandbox
 /IGLibSandbox1
-/IGLibSandbox11
+/IGLibSandbox2
 
 # IGLibEventAggregator: The development sandbox for IGLib libraries.
 /IGLibEventAggregator
 /IGLibEventAggregator1
-/IGLibEventAggregator11
+/IGLibEventAggregator2
 
 # Legacy IGLib Framework repositories:
 
 # iglib: base IGLib Framework's libraries
 /iglib
 /iglib1
-/iglib11
+/iglib2
 
 # iglibexternal: container of external dependencies for IGLib Framework
 /iglibexternal
 /iglibexternal1
-/iglibexternal11
+/iglibexternal2
 
 #igsolutions: contains IGLib solutions
 /igsolutions
 /igsolutions1
-/igsolutions11
+/igsolutions2
 
 # shelldev
 /shelldev
 /shelldev1
-/shelldev11
+/shelldev2
 
 # iglibapp
 /iglibapp
 /iglibapp1
-/iglibapp11
+/iglibapp2
 
 # iglearn: learning and research repository, contains e.g. collections of 
 # various groups of repositories with their cloning scripts (eg. for 
@@ -75,21 +75,40 @@
 # machine learning, UI frameworks, code editors, cryptography
 /iglearn
 /iglearn1
-/iglearn11
+/iglearn2
 
 # igsandbox: sandbox development repository for IGLib Framework
 /igsandbox
 /igsandbox1
-/igsandbox11
+/igsandbox2
 
 # igtest: a set of unit and other tests for the legacy IGLib Framework
 /igtest
 /igtest1
-/igtest11
+/igtest2
 
 #unittests
 /unittests
 /unittests1
-/unittests11
+/unittests2
+
+# workspaceprojects/ and workspaceprojects_all/ contain, among the others,
+# testing material for IGLib. However, these directories are cloned two
+# directories below the container directory that containe the iglib/
+# repository. 
+# Within the current container, these directories are cloned by running 
+# the respective cloning / updating scripts in nested containers, such as
+# those located in the _copies/ directory, such as 
+# _copies/iglibmodules_FRAMEWORK_CUSTOM/
+
+#workspaceprojects
+/workspaceprojects
+/workspaceprojects1
+/workspaceprojects2
+
+#workspaceprojects_all
+/workspaceprojects_all
+/workspaceprojects_all1
+/workspaceprojects_all2
 
 
