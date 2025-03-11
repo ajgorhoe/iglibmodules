@@ -33,6 +33,12 @@ Write-Host "`nUpdating iglearn:"
 Write-Host "`nUpdating igsandbox:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igsandbox.ps1")
 
+Write-Host "`nUpdating unittests:"
+& $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_unittests.ps1")
+
+Write-Host "`nUpdating igtest:"
+& $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igtest.ps1")
+
 
 Write-Host "  ... updating extended IGLib Framework repositories complete.`n`n"
 
