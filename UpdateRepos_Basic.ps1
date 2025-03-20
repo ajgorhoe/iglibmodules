@@ -21,6 +21,9 @@ Write-Host "`nUpdating IGLibScripting:"
 Write-Host "`nUpdating IGLibScriptingCs:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptingCs.ps1")
 
+Write-Host "`nUpdating IGLibGraphics3D:"
+& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibGraphics3D.ps1")
+
 Write-Host "`nUpdating IGLibSandbox:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibSandbox.ps1")
 
