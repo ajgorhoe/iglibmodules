@@ -22,22 +22,28 @@
 # IGLibScriptsEXP: Fork of IGLibScripts - experimental (maybe deleted i the future).
 /IGLibScriptsEXP
 
-# IGLibScripting: The basic low level IGLib library.
+# IGLibScripting: Basic scripting library for IGLib.
 /IGLibScripting
 /IGLibScripting1
 /IGLibScripting11
 
-# IGLibScriptingCs: The basic low level IGLib library.
+# IGLibScriptingCs: C# scripting library for IGLib.
 /IGLibScriptingCs
 /IGLibScriptingCs1
 /IGLibScriptingCs2
+
+# IGLibGraphics3D: 3D Graphics library for IGLib.
+/IGLibGraphics3D
+/IGLibGraphics3D1
+/IGLibGraphics3D2
 
 # IGLibSandbox: The development sandbox for IGLib libraries.
 /IGLibSandbox
 /IGLibSandbox1
 /IGLibSandbox2
 
-# IGLibEventAggregator: The development sandbox for IGLib libraries.
+# IGLibEventAggregator: Simple event aggregator project, currently not in use 
+# but may be revived in some time the future.
 /IGLibEventAggregator
 /IGLibEventAggregator1
 /IGLibEventAggregator2
