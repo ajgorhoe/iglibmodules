@@ -14,11 +14,11 @@ Write-Host "Script directory: $scriptDir"
 
 Write-Host "`nUpdating EXTENDED IGLib repositories:`n"
 
-Write-Host "`nUpdating IGLibScriptsPS:"
-& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptsPS.ps1")
+# Write-Host "`nUpdating IGLibScriptsPS:"
+# & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptsPS.ps1")
 
-Write-Host "`nUpdating IGLibScriptsEXP:"
-& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptsEXP.ps1")
+# Write-Host "`nUpdating IGLibScriptsEXP:"
+# & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptsEXP.ps1")
 
 
 
