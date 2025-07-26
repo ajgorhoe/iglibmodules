@@ -1,5 +1,47 @@
 
+# General ignores:
+
 *.bak
+
+
+# Specific ignores (clones of Anka's repositories):
+
+# LearnCsharpBasics:
+# Anka's and Igor's repository for learning C#.
+# https://github.com/AnkitaMega/LearnCsharpBasics
+# Igor's clone: https://github.com/ajgorhoe/LearnCsharpBasics.git
+/anka_LearnCsharpBasics
+
+# anka_html_basics:
+# Anka's repository for learning HTML, CSS, and JavaScript.
+# https://gitlab.com/AnkitaSL/vaje.anka_html_basics.git
+/anka_html_basics
+
+# learn_anka_igor:
+# Common repository (Anka & Igor) for various learning material and other
+# exchange.
+# https://github.com/ajgorhoe/shared.learn_anka_igor.git
+/learn_anka_igor
+
+# iglibmodules_anka:
+# Anka's container repository (this repository, cloned within itself)
+# - normally you will not clone this repository here.
+# https://github.com/ajgorhoe/iglibmodules_anka.git
+/iglibmodules_anka
+
+
+
+
+
+
+
+
+
+##############################
+##############################
+# 
+#  Please leave the lines below untouched!
+# 
 
 # output: output directory of the legacy IGLib frameworks
 /output
