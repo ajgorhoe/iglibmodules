@@ -23,20 +23,31 @@ Write-Host "Updating/cloning a specific repository..."
 ########################################################################
 # Custom section (USER DEFINED):
 
+# Set variables that define how repository is cloned / updated:
+
 # Path to UpdateOrCloneRepository.ps1
 $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
+# Directory where the repository will be cloned (relative to this script location):
 $global:CurrentRepo_Directory = "learn_anka_igor"
+# Branch of the repository that is checked out:
 $global:CurrentRepo_Ref = "main"
+# Address of the primary remote repository:
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/shared.learn_anka_igor.git"
+# Name of the primary remote repository:
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = ""
+# Address of the secondary remote (currently not specified):
+$global:CurrentRepo_AddressSecondary = $null
+# Name of the secondary remote (currently not specified):
 $global:CurrentRepo_RemoteSecondary = ""
+# Address of the tertiary remote (invalid, but leave it as it is):
 $global:CurrentRepo_AddressTertiary = "d:\backup_sync\bk_code\git\anka\learn_anka_igor.git"
+# Name of the tertiary remote:
 $global:CurrentRepo_RemoteTertiary = "local"
+# Flag - should exception be thrown on errors (false means script will report an error and continue)
 $global:CurrentRepo_ThrowOnErrors = $false
 
 # End of custom section
