@@ -31,11 +31,12 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 
 $global:CurrentRepo_Directory = "./"
 $global:CurrentRepo_Ref = "main"
-$global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules.git"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules_anka.git"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = $null
-$global:CurrentRepo_RemoteSecondary = "mirrorUnknown"
-$global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/IGLibModules.git"
+# "https://github.com/ajgorhoe/iglibmodules_anka.git"
+$global:CurrentRepo_RemoteSecondary = "upstream_iglibmodules"
+$global:CurrentRepo_AddressTertiary = "d:\backup_sync\bk_code\git\anka\iglibmodules_anka.git"
 $global:CurrentRepo_RemoteTertiary = "local"
 $global:CurrentRepo_ThrowOnErrors = $false
 
