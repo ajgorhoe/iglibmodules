@@ -12,5 +12,9 @@ This is the [IGLib modules' container repository](https://github.com/ajgorhoe/ig
 
 ## About IGLib Container Repository
 
+Copyright (c) Igor Grešovnik
+See LICENSE.md at https://github.com/ajgorhoe/iglibmodules
+Location in legacy container repository: .../other/iglibmodules
+
 This repository is used for **cloning IGLib repositories** and for **developing and building** them locally. Cloning and updating the repositories is done using Windows batch scripts, while **other git** source control related tasks (such as branching, committing, pushing...) are performed by using normal Git clients such as Git command-line (git.exe) or TortoiseGit.
 
