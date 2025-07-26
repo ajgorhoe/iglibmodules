@@ -18,8 +18,8 @@ Write-Host "`nUpdating anka_html_basics:"
 Write-Host "`nUpdating learn_anka_igor:"
 & $(Join-Path $scriptDir "UpdateRepo_learn_anka_igor.ps1")
 
-Write-Host "`nUpdating iglibmodules_anka:"
-& $(Join-Path $scriptDir "UpdateRepo_iglibmodules_anka.ps1")
+# Write-Host "`nUpdating iglibmodules_anka:"
+# & $(Join-Path $scriptDir "UpdateRepo_iglibmodules_anka.ps1")
 
 Write-Host "  ... updating other learning repositoris in the current directory completed.`n`n"
 
