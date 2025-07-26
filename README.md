@@ -5,12 +5,12 @@ This is the [IGLib modules' container repository](https://github.com/ajgorhoe/ig
 
 **Contents**:
 
-* [About IGLib Container Repository](#about-iglib-container-repository)
+* [About IGLib Container Repository](#about-the-iglib-container-repository)
 * **External**:
   * [Wiki - IGLib](https://github.com/ajgorhoe/wiki.IGLib/tree/main/IGLib) (private repository)
     * [Wiki - Scripting (directory)](https://github.com/ajgorhoe/wiki.IGLib/tree/main/IGLib/scripting)
 
-## About IGLib Container Repository
+## About the IGLib Container Repository
 
 Copyright (c) Igor Grešovnik
 See LICENSE.md at https://github.com/ajgorhoe/iglibmodules
