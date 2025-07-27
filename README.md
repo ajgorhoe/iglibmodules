@@ -1,20 +1,29 @@
 
-# IGLib Modules' Container Repository
+# Anka's Container Repository
 
-This is the [IGLib modules' container repository](https://github.com/ajgorhoe/iglibmodules) used to clone and build the new IGLib modules (as opposed to the classical IGLib libraries, which are built by [this repository](https://github.com/ajgorhoe/iglibcontainer)). See also the readme files of the [IGLibCore repository](https://github.com/ajgorhoe/IGLib.modules.IGLibCore) and the basic [IGLib Framework repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib).
+This is the [Anka's container repository](https://github.com/ajgorhoe/iglibmodules_anka), based on the newer [IGLib's container repository](https://github.com/ajgorhoe/iglibmodules).
 
-**Contents**:
+## How to Use the Repository
 
-* [About IGLib Container Repository](#about-the-iglib-container-repository)
-* **External**:
-  * [Wiki - IGLib](https://github.com/ajgorhoe/wiki.IGLib/tree/main/IGLib) (private repository)
-    * [Wiki - Scripting (directory)](https://github.com/ajgorhoe/wiki.IGLib/tree/main/IGLib/scripting)
+* Clone [this containner repository](https://github.com/ajgorhoe/iglibmodules_anka) to a desired location on the local system.
+* Run any of the PowerShell scripts in the root directory of the cloned container repository in order to clone a specific repository within the container.
+  * All repositories can be cloned in one step by running the .
 
-## About the IGLib Container Repository
+In the update / clone scripts, varialbes specify which repository are cloned, to which location, the branch checked out, and the remotes. Meaning of these variables are defined in `UpdateRepo_learn_anka_igor.ps1`. In order to create a new clone / update script, just copy an existing one and adapt the variables. If appropriate, also call the script in the script for group cloning, `UpdateRepoGroup_AnkasRepositories.ps1`. The meaning of variables is as follows:
+
+* `UpdatingScriptPath`: Path to the UpdateOrCloneRepository.ps1, which all clone / update scripts call to do the job
+* `global:CurrentRepo_Directory`: Directory where the repository will be cloned (relative to ththe location of the cloning script)
+* `global:CurrentRepo_Ref`: Branch of the repository that is checked out
+* `global:CurrentRepo_Address`: Address of the primary remote repository
+* `global:CurrentRepo_Remote`: Name of the primary remote repository
+* `global:CurrentRepo_AddressSecondary`: Address of the secondary remote
+* `global:CurrentRepo_RemoteSecondary`: Name of the secondary remote
+* `global:CurrentRepo_AddressTertiary`: Address of the tertiary remote
+* `global:CurrentRepo_RemoteTertiary`: Name of the tertiary remote:
+* `global:CurrentRepo_ThrowOnErrors`: Flag specifying whether exception should be thrown on errors (false means script will just report an error and continue)
+
+## About the Container Repository
 
 Copyright (c) Igor Grešovnik
-See LICENSE.md at https://github.com/ajgorhoe/iglibmodules
-Location in legacy container repository: .../other/iglibmodules
-
-This repository is used for **cloning IGLib repositories** and for **developing and building** them locally. Cloning and updating the repositories is done using Windows batch scripts, while **other git** source control related tasks (such as branching, committing, pushing...) are performed by using normal Git clients such as Git command-line (git.exe) or TortoiseGit.
+See LICENSE.md at https://github.com/ajgorhoe/iglibmodules_anka
 
