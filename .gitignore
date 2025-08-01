@@ -29,7 +29,10 @@
 # https://github.com/ajgorhoe/iglibmodules_anka.git
 /iglibmodules_anka
 
-
+# anka:
+# Repository containing Anka's files like directory with HTML pages for
+#   deployment to web server.
+/anka
 
 
 
