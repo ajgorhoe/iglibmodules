@@ -9,10 +9,14 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 Write-Host "Script directory: $scriptDir"
 
-# Write-Host "`nUpdating basic IGLib repositories:`n" # this output is already in script.
+# Write-Host "`n`nUpdating basic IGLib repositories:`n" # this output is already in script.
 & $(join-path $scriptDir "UpdateRepos_Basic.ps1")
 
 Write-Host "`nUpdating EXTENDED IGLib repositories:`n"
+
+Write-Host "`nUpdating IGLibEventAggregator:"
+& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibEventAggregator.ps1")
+
 
 # Write-Host "`nUpdating IGLibScriptsPS:"
 # & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptsPS.ps1")

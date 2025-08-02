@@ -7,7 +7,13 @@ $scriptPath = $MyInvocation.MyCommand.Path
 $scriptDir = Split-Path $scriptPath -Parent
 $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
+Write-Host "`nUpdating BASIC IGLib repositories:`n"
+
 Write-Host "Script directory: $scriptDir"
+
+# Update learning repo as part of IGLibBasic:
+Write-Host "`nUpdating iglearn:"
+& $(Join-Path $scriptDir "_scripts/UpdateRepo_iglearn.ps1")
 
 Write-Host "`nUpdating IGLibCore:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibCore.ps1")
@@ -27,8 +33,8 @@ Write-Host "`nUpdating IGLibGraphics3D:"
 Write-Host "`nUpdating IGLibSandbox:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibSandbox.ps1")
 
-Write-Host "`nUpdating IGLibEventAggregator:"
-& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibEventAggregator.ps1")
+# Remark:
+# Updating IGLibEventAggregator moved to UpdateRepos_Extended.ps1
 
 Write-Host "  ... updating basic repositoris in iglibmodules/ completed.`n`n"
 

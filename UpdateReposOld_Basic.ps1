@@ -9,13 +9,6 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 Write-Host "Script directory: $scriptDir"
 
-
-# First, update group of IGLib basic repositories:
-& $(join-path $scriptDir "UpdateRepos_Basic.ps1")
-
-
-Write-Host "`nUpdating basic IGLibFramework repositories:`n"
-
 Write-Host "`nUpdating iglib:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_iglib.ps1")
 
@@ -24,6 +17,12 @@ Write-Host "`nUpdating iglibexternal:"
 
 Write-Host "`nUpdating igsolutions:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igsolutions.ps1")
+
+
+# Finally, also update group of IGLib basic repositories:
+Write-Host "`nUpdating basic IGLibFramework repositories from UpdateReposOld_Basic.ps1:`n"
+
+& $(join-path $scriptDir "UpdateRepos_Basic.ps1")
 
 
 Write-Host "  ... updating basic IGLib Framework repositories completed.`n`n"
