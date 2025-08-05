@@ -35,6 +35,13 @@
 /anka
 
 
+# iglibmodules:
+# Igor's container repository for IGLib
+# - only clone if you need tools from this repository. This container repository is
+# used i na similar way as the current repository.
+# https://github.com/ajgorhoe/iglibmodules.git
+/iglibmodules
+
 
 
 
