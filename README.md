@@ -1,7 +1,7 @@
 
 # IGLib Modules' Container Repository
 
-This is the [IGLib modules' container repository](https://github.com/ajgorhoe/iglibmodules) used to clone and build the new IGLib modules (as opposed to the classical IGLib libraries, which are built by [this repository](https://github.com/ajgorhoe/iglibcontainer)). See also the readme files of the [IGLibCore repository](https://github.com/ajgorhoe/IGLib.modules.IGLibCore) and the basic [IGLib Framework repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib).
+This is the [IGLib modules' container repository](https://github.com/ajgorhoe/iglibmodules) used to clone and build the new IGLib modules (as opposed to the legacy IGLib Framework libraries, which are built by [this repository](https://github.com/ajgorhoe/iglibcontainer)). See also the readme files of the [IGLibCore repository](https://github.com/ajgorhoe/IGLib.modules.IGLibCore) and the basic [IGLib Framework repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib).
 
 **Contents**:
 
@@ -18,23 +18,24 @@ Copyright (c) Igor Grešovnik
 See LICENSE.md at https://github.com/ajgorhoe/iglibmodules
 Location in legacy container repository: .../other/iglibmodules
 
-This repository is used for **cloning IGLib repositories** and for **developing, building, testing** and running  them **locally**. However, the repository can be [easily customized for other software projects](#customizing-the-repository-for-other-software-projects) involving **multiple source code repositories**.
+This repository is used for **cloning IGLib repositories** (the new [IGLib](https://github.com/ajgorhoe/IGLib.modules.IGLibCore/blob/main/README.md) and the legacy [IGLib Framework](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/blob/master/README.md)) and for **developing, building, testing** and running  them **locally**. However, the repository can be **[easily customized](#customizing-the-repository-for-other-software-projects) for other software projects** involving **multiple source code repositories**.
 
-The idea is that **development of software projects** consisting of many modules with their own source code repositories is much easier when **dependencies** where source code is under developers' control are referenced **directly via source control**, rather than via compiled binaries. This significantly **shortens code-build-test-debug cycles** in modern IDEs. For this to work, the source repositories for involved modules must exist at specific relative paths with respect to each other. This **container repository** helps **cloning individual repositories at correct relative paths**, which is achieved by the [cloning/updating scripts](#cloning-and-updating-repositories-using-scripts-in-the-container-repository) that are part of the repository. For more information, see the [Typical Workflows](#typical-workflows-with-this-repository) Section.
+The idea is that **development of software projects** consisting of many modules with their own source code repositories is much easier when **dependencies** are referenced **directly via source code**, rather than via compiled binaries. This significantly **shortens code-build-test-debug cycles** in modern IDEs. For this to work, the source repositories for involved modules must exist at specific relative paths with respect to each other. This **container repository** helps **cloning individual repositories at correct relative paths**, which is achieved by the [cloning/updating scripts](#cloning-and-updating-repositories-using-scripts-in-the-container-repository) that are part of the repository. For more information, see the [Typical Workflows](#typical-workflows-with-this-repository) Section.
 
-Initial cloning and sometimes updating the repositories is conveniently done by using predefined [PowerShell](https://github.com/PowerShell/PowerShell/blob/master/README.md) scripts, while **other git** source control-**related tasks** (such as branching, committing, pushing...) are performed by using normal Git clients such as Git command-line (git.exe) or a GUI client such as TortoiseGit (on MS Windows), GitKraken (multi-platform), or RabbitVCS (Linux, integrated with file managers).
+Initial **cloning** and sometimes updating the repositories is conveniently done by using the included [cloning/updating scripts](#cloning-and-updating-repositories-using-scripts-in-the-container-repository). **Other git** source control-**related tasks** (such as branching, committing, pushing...) are performed by using usual Git clients such as Git command-line (git.exe) or a GUI client such as TortoiseGit (on MS Windows), GitKraken (multi-platform), or RabbitVCS (Linux, integrated with file managers), and countless others.
 
-### Prerequisites
+### Prerequisites for Using this Repository
 
 * Installed [Git command-line client](https://git-scm.com/)
 * Installed [PowerShell](https://learn.microsoft.com/en-us/powershell/) - [multi-platform pwsh](https://github.com/PowerShell/PowerShell) or Windows PowerShell (pre-installed on Windows)
-* For building .NET projects, also:
+* For *building .NET projects*, also:
   * [.NET SDK](https://dotnet.microsoft.com/en-us/download)
   * Preferably (optional), an IDE that can work with VS solutions (`.sln`) and .NET projects (such as `.csproj`), e.g.:
-    * [Visual Studio](https://visualstudio.microsoft.com/) - the preferable choice on MS Windows
-    * [Visual Studio Code]() with the [`C# Dev Kit` extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) (and possibly `C#` Extension, which should normally be installed by the previous one) from Microsoft, available for major operating systems (MS Windows, Linux, macOS)
+    * [Visual Studio](https://visualstudio.microsoft.com/) - the preferable choice on MS Windows (you may be eligible for the [free Community edition](https://visualstudio.microsoft.com/free-developer-offers/))
+    * [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) (and possibly `C#` Extension, which should normally be installed by the previous one); VS Code   is a free cross-platform IDE, available for major operating systems (MS Windows, Linux, macOS)
       * also check for other useful extensions
-    * 
+    * [JetBrains Rider](https://www.jetbrains.com/rider/), a popular IDE for MS Windows, Linux and macOS
+* For *building projects in other languages* (e.g. when using a [customized container repository](#customizing-the-repository-for-other-software-projects)), also the necessary SDKs and IDEs for these languages
 
 ## Using this Repository with IGLib
 
@@ -54,11 +55,13 @@ Initial cloning and sometimes updating the repositories is conveniently done by 
 
 ## Using this Repository with Legacy IGLib Framework
 
-## Customizing the Repository for Other Software Projects
+This container repository can also be used for building and testing the [Legacy IGLib Framework]().
 
-## Typical Workflows with this Repository
+## Customizing the Repository for Other Software Projects
 
 ## Cloning and Updating Repositories Using Scripts in the Container Repository
 
 ## Building .NET Projects in the Container Repository
+
+## Typical Workflows with this Repository
 
