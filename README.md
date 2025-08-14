@@ -18,7 +18,7 @@ Copyright (c) Igor Grešovnik
 See LICENSE.md at https://github.com/ajgorhoe/iglibmodules
 Location in legacy container repository: .../other/iglibmodules
 
-This repository is used for **cloning IGLib repositories** (the new [IGLib](https://github.com/ajgorhoe/IGLib.modules.IGLibCore/blob/main/README.md) and the legacy [IGLib Framework](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/blob/master/README.md)) and for **developing, building, testing** and running  them **locally**. However, the repository can be **[easily customized](#customizing-the-repository-for-other-software-projects) for other software projects** involving **multiple source code repositories**.
+This repository is primarily used for **cloning and building IGLib repositories** (the new [IGLib](https://github.com/ajgorhoe/IGLib.modules.IGLibCore/blob/main/README.md) and the legacy [IGLib Framework](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/blob/master/README.md)) and for **developing, building, testing** and running  them **locally**. However, the repository can be **[easily customized](#customizing-the-repository-for-other-software-projects) for other software projects** involving **multiple source code repositories**.
 
 The idea is that **development of software projects** consisting of many modules with their own source code repositories is much easier when **dependencies** are referenced **directly via source code**, rather than via compiled binaries. This significantly **shortens code-build-test-debug cycles** in modern IDEs. For this to work, the source repositories for involved modules must exist at specific relative paths with respect to each other. This **container repository** helps **cloning individual repositories at correct relative paths**, which is achieved by the [cloning/updating scripts](#cloning-and-updating-repositories-using-scripts-in-the-container-repository) that are part of the repository. For more information, see the [Typical Workflows](#typical-workflows-with-this-repository) Section.
 
@@ -35,27 +35,45 @@ Initial **cloning** and sometimes updating the repositories is conveniently done
     * [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) (and possibly `C#` Extension, which should normally be installed by the previous one); VS Code   is a free cross-platform IDE, available for major operating systems (MS Windows, Linux, macOS)
       * also check for other useful extensions
     * [JetBrains Rider](https://www.jetbrains.com/rider/), a popular IDE for MS Windows, Linux and macOS
-* For *building projects in other languages* (e.g. when using a [customized container repository](#customizing-the-repository-for-other-software-projects)), also the necessary SDKs and IDEs for these languages
+* For *building projects in other languages* (e.g. when using a [customized container repository](#customizing-the-repository-for-other-software-projects)), also the necessary SDKs and IDEs for those languages
 
 ## Using this Repository with IGLib
+
+For [IGLib](https://github.com/ajgorhoe/IGLib.modules.IGLibCore/blob/main/README.md), this container contains predefined scripts for cloning and updating all involved repositories that are worked on in source code. Downloading (cloning) and building the *IGLib* is therefore very easy:
 
 * Clone [this repository](https://github.com/ajgorhoe/iglibmodules) to desired location on the target computer
   * Open the OS command shell or PowerShell on the target location
   * Run `git clone https://github.com/ajgorhoe/iglibmodules`
 * Open the 'iglibmodules' directory where the repository was cloned
-* Run the group cloning/updating PowerShell script for IGLib repositories,
+* Run the group cloning/updating PowerShell script to **clone IGLib repositories**,
   * `iglibmodules/UpdateRepos_Basic.ps1`
   * Some of the repositories cloned by this scripts may be private, and errors will be reported for the repositories for which you don't have access rights. This will just skip those repositories but will not break the script.
   * See the [Cloning and Updating Repositories](#cloning-and-updating-repositories-using-scripts-in-the-container-repository) Section
 * Change directory to:
   `iglibmodules/IGLibCore/`
 * Open (in a suitable IDE) one of the solutions in `iglibmodules/IGLibCore/`, either `IGLibCore.sln` (to build only the projects in IGLibCore) or 'IGLibCore_All.sln' (to build all IGLibCore libraries)
-* Build the projects of choice, run the built applications, etc.
+* **Build the projects of choice**, run the built applications, etc.
   * See the [Building .NET Projects](#building-net-projects-in-the-container-repository) Section
+* To generate and view your local copy of **code documentation**:
+  * Change directory to `iglibmodules/_doc/`
+  * Run the script `UpdateRepo_codedoc.ps1` in this directory
+  * Change directory to the newly created `iglibmodules/_doc/codedoc`
+  * Run one of the documentation generating scripts for IGLib, such as `GenerateDocIGLib.ps1`, `GenerateDocIGLibAll.ps1`, `GenerateDocIGLibWithSources.ps1`, or `GenerateDocIGLibAllWithSources.ps1`
+  * Open the `CodeDocumentation.html` file in a web browser (usually by double-clicking the file) and click the appropriate link to the specific code documentation (which you must have generated before, as described in the previous step)
 
 ## Using this Repository with Legacy IGLib Framework
 
-This container repository can also be used for building and testing the [Legacy IGLib Framework]().
+This container repository can also be used for building and testing the [Legacy IGLib Framework](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/blob/master/README.md), as the necessary scripts are already included in this repository and nested utility repositories (such as `_doc/codedoc` for generating code documentation). Usage is *almost identical [as for the new IGLib](#using-this-repository-with-iglib)*, except for the following **differences**:
+
+* To clone the necessary repositories, run one of the following scripts:
+  * `UpdateReposLegacy_Basic.ps1`
+  * or
+  * `UpdateReposLegacy_Extended.ps1`
+* To build the code, go to `iglibmodules/iglib` and open one of the available solutions:
+  * `IGLibWithDemoApps.sln` (preferable in most cases)
+  * `ShellDevAll.sln` for heavy maintenance tasks
+* To generate and view code documentation, follow similar steps as with the new IGLib, except run the generation scripts for the legacy IGLib Framework in `iglibmodules/_doc/codedoc/`:
+  * `generate_iglib.ps1`, `generate_igliball.ps1`, `generate_iglib_with_sources.ps1`, or `generate_igliball_with_sources.ps1`
 
 ## Customizing the Repository for Other Software Projects
 
