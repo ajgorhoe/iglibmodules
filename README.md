@@ -77,6 +77,26 @@ This container repository can also be used for building and testing the [Legacy 
 
 ## Customizing the Repository for Other Software Projects
 
+It is easy to customize this repository for other software projects: just adapt the [cloning/updating scripts](#cloning-and-updating-repositories-using-scripts-in-the-container-repository). This is true for any software where the source code under developers' control consists of multiple Git repositories, which must be located at the specified relative path with respect to each other.
+
+Typically, customization would consist of the following steps:
+
+* **Fork the [iglibmodules repository](https://github.com/ajgorhoe/iglibmodules)** (this repository) on a server accessible to all developers (public service like GitHub, GitLab or BitBucket, or a company's source control server)
+  * If fork is not possible or desirable, simply create an empty Git repository under your control and push this repository's main branch to that repository
+  * By starting from a fork or a compatible repository, you will be able to pull the eventual useful updates
+* Create yor custom main branch from the main branch of this repository.
+  * Make this custom branch main branch of your repository
+  * If synchronization of new features from this repository to your fork is intended, define a remote in your local clones that points to the original repository
+    * For additional safety, you can delete the branch called *main* in your fork and in your local clones of the fork; this can reduce the probability of unintended merge, push or pull attempts
+* Adapt the script for cloning/updating individual repositories and groups of repositories
+  * Leave the general cloning/updating script, `iglibmodules/_scripts/UpdateOrCloneRepository.ps1`  intact
+  * Use updating/cloning scripts for specific repositories (from `iglibmodules/_scripts`), such as `UpdateRepo_IGLibScripts.ps1`, as template for your cloning/updating scripts; use group cloning/updating scripts from `iglibmodules/`, such as `UpdateRepos_Basic.ps1` and `UpdateRepos_Extended.ps1`, as templates for your own group cloning/updating scripts
+  * Create the updating/cloning scripts for each repository that constitutes the software source code
+  * Create group updating/cloning scripts for all of these repositories, or for different groups of repositories, whichever is suitable for the structure of your software sources
+* If preferred, remove the existing cloning/updating scripts from the original repository on your customized fork's main branch
+
+The [Cloning and Updating Section](#cloning-and-updating-repositories-using-scripts-in-the-container-repository) contains information on how to adapt specific cloning/updating scripts to match your own source code repositories.
+
 ## Cloning and Updating Repositories Using Scripts in the Container Repository
 
 ## Building .NET Projects in the Container Repository
