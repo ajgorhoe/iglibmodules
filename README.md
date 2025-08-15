@@ -123,9 +123,21 @@ When a **new repository** needs to be added to software sources, you can simply 
 * `CurrentRepo_ThrowOnErrors` specifies whether exceptions are thrown on errors. Default (and recommended) is $false, which means that errors are reported but they don't end the execution of the cloning/updating script
 * if certain variables are not defined for a specific repository (commonly, addresses of secondary and tertiary remotes), set them to `$null`
 
-One important property of cloning/updating scripts is that results of their calls are the same regardless of the current directory. Paths are specified as absolute paths, or are treated relative to the script directory. Besides, these scripts are run without arguments.
+One important property of cloning/updating scripts is that **results** of their calls are **independent of the current directory**. Paths are specified as absolute paths, or are treated relative to the script directory. Besides, these scripts are run without arguments.
 
-The **group cloning/updating scripts** (such as [UpdateRepos_Basic.ps1](./UpdateRepos_Basic.ps1) or [UpdateRepos_Extended.ps1](./UpdateRepos_Extended.ps1)) simply run several cloning/updating scripts for individual repositories, to clone or update a group of related repositories. For each individual script, its absolute path is calculated from the relative path with respect to script location before it is run.
+**Updating/cloning scripts** for individual repositories do the following:
+
+* When the repository is not yet cloned:
+  * Clone the repository at the specified location (variable `CurrentRepo_Directory`, relative to the script location)
+  * Define the remotes as specified by the variables (`CurrentRepo_Address` / `CurrentRepo_Remote`, `CurrentRepo_AddressSecondary` / `CurrentRepo_RemoteSecondary`, `CurrentRepo_AddressTertiary` / `CurrentRepo_RemoteTertiary`)
+  * Fetch from the primary remote
+  * Check out the specified branch (or tag or commit) from the primary remote (variable `CurrentRepo_Ref`)
+* When the repository clone already exists:
+  * Fetch from the primary remote
+  * Check out the specified branch (or tag or commit; variable `CurrentRepo_Ref`) if not already checked out
+  * Pull to the checked out branch from the primary remote (if applicable, e.g., if not in detached state) to integrate the latest changes from the common server
+
+**Group cloning/updating scripts** (such as [UpdateRepos_Basic.ps1](./UpdateRepos_Basic.ps1) or [UpdateRepos_Extended.ps1](./UpdateRepos_Extended.ps1)) simply run several cloning/updating scripts for individual repositories, to clone or update a group of related repositories. For each individual script, its absolute path is calculated from the relative path with respect to script location before it is run.
 
 ### Running the Scripts
 
