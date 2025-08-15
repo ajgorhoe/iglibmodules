@@ -89,17 +89,86 @@ Typically, customization would consist of the following steps:
   * If synchronization of new features from this repository to your fork is intended, define a remote in your local clones that points to the original repository
     * For additional safety, you can delete the branch called *main* in your fork and in your local clones of the fork; this can reduce the probability of unintended merge, push or pull attempts
 * Adapt the script for cloning/updating individual repositories and groups of repositories
-  * Leave the general cloning/updating script, `iglibmodules/_scripts/UpdateOrCloneRepository.ps1`  intact
   * Use updating/cloning scripts for specific repositories (from `iglibmodules/_scripts`), such as `UpdateRepo_IGLibScripts.ps1`, as template for your cloning/updating scripts; use group cloning/updating scripts from `iglibmodules/`, such as `UpdateRepos_Basic.ps1` and `UpdateRepos_Extended.ps1`, as templates for your own group cloning/updating scripts
+  * Leave the general cloning/updating script, `iglibmodules/_scripts/UpdateOrCloneRepository.ps1`,  intact
   * Create the updating/cloning scripts for each repository that constitutes the software source code
   * Create group updating/cloning scripts for all of these repositories, or for different groups of repositories, whichever is suitable for the structure of your software sources
 * If preferred, remove the existing cloning/updating scripts from the original repository on your customized fork's main branch
+* If you also want to customize automatic generation of code documentation for your software, do the following:
+  * Customize the [codedoc repository](https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc)
+    * The best way to do that is to fork the original directory, create a new main branch for the customized fork, and make the necessary adaptation on that branch
+    * See the [codedoc readme file](https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc/blob/master/README.md) for more information on the `codedoc` repository ind its customization
+  * Adapt the script `iglibmodules/_doc/UpdateRepo_codedoc.ps1` accordingly: update remotes` addresses and names (point to your fork and your main branch), preferably also the clone directory, do distinguish it from the original repository
 
 The [Cloning and Updating Section](#cloning-and-updating-repositories-using-scripts-in-the-container-repository) contains information on how to adapt specific cloning/updating scripts to match your own source code repositories.
 
 ## Cloning and Updating Repositories Using Scripts in the Container Repository
 
+[Powershell](https://learn.microsoft.com/en-us/powershell/) scripts are used for cloning and updating repositories within this container repository (see [Running the Scripts](#running-the-scripts)). In this way, the same scripts can be used on different platforms.
+
+The script *[iglibmodules/_scripts/UpdateOrCloneRepository.ps1](./_scripts/UpdateOrCloneRepository.ps1)* is the basis for cloning/updating scripts for individual repositories. These scripts just set the variables that define how the specific repository is cloned or updated (such as cloning directory, names and addresses of remotes, the checked out branch), and call the `UpdateOrCloneRepository.ps1`, which does the job. The correct relative location of the `UpdateOrCloneRepository.ps1` must also be specified in the cloning/updating scripts for individual repositories. The `UpdateOrCloneRepository.ps1` script was borrowed from the [IGLibScripts repository](https://github.com/ajgorhoe/IGLib.modules.IGLibScripts/blob/main/README.md), where it is developed, and new versions are copied to this repository every now and then.
+
+When a **new repository** needs to be added to software sources, you can simply **create its cloning/updating script by adapting an existing script** (such as [UpdateRepo_IGLibScripts.ps1](./_scripts/UpdateRepo_IGLibScripts.ps1)) by simply setting the values of variables that determine how cloning/updating is performed:
+
+* `UpdatingScriptPath` must be set to the relative path of the `UpdateOrCloneRepository.ps1` with respect to the new cloning/updating script
+* `CurrentRepo_Directory` must be set to relative path of the cloning directory, relative to the script
+* `CurrentRepo_Ref` must be set to the branch (or commit, or tag) from the primary remote repository that will be checked out or updated (pulled from the primary remote) when the script is run
+* `CurrentRepo_Address` must be set to the primary remote repository to be cloned, and from which the new state is updated when the script is run
+* `CurrentRepo_Remote` must contain the name of the primary remote (usually, this will be `origin`)
+* `CurrentRepo_AddressSecondary` must be set to the address of the secondary remote, if one is specified.
+  * When the script is run, the secondary and tertiary remotes are set, if specified, such that users can push to or pull from these remotes when needed
+* `CurrentRepo_RemoteSecondary` must be set to the chosen name of the secondary remote
+* `CurrentRepo_AddressTertiary` must be set to the address of the third remote, if one is specified
+* `CurrentRepo_RemoteTertiary` must be set to the chosen name of the third remote, if one is specified
+* `CurrentRepo_ThrowOnErrors` specifies whether exceptions are thrown on errors. Default (and recommended) is $false, which means that errors are reported but they don't end the execution of the cloning/updating script
+* if certain variables are not defined for a specific repository (commonly, addresses of secondary and tertiary remotes), set them to `$null`
+
+One important property of cloning/updating scripts is that results of their calls are the same regardless of the current directory. Paths are specified as absolute paths, or are treated relative to the script directory. Besides, these scripts are run without arguments.
+
+The **group cloning/updating scripts** (such as [UpdateRepos_Basic.ps1](./UpdateRepos_Basic.ps1) or [UpdateRepos_Extended.ps1](./UpdateRepos_Extended.ps1)) simply run several cloning/updating scripts for individual repositories, to clone or update a group of related repositories. For each individual script, its absolute path is calculated from the relative path with respect to script location before it is run.
+
+### Running the Scripts
+
+Cloning/updating scripts run both in Windows [PowerShell](https://learn.microsoft.com/en-us/powershell/), which runs on MS Windows and is preinstalled on this operating system, or in the [cross-platform PowerShell](https://github.com/PowerShell/PowerShell/blob/master/README.md), available for Linux, macOS, and Windows. On operating systems other than MS Windows, install the cross-platform PowerShell [from here](https://learn.microsoft.com/en-us/powershell/) before using this repository.
+
+On Windows, you can simply right-click the script in a file explorer and select "Run with PowerShell" from the context menu. 
+
+On all systems, the PowerShell command-line interpreter can be started from system command-line shells:
+
+* Type `PowerShell` to start the Windows PowerShell (Windows only)
+* Type `pwsh` to start the cross-platform PowerShell
+
+In order to run the cloning/updating script in PowerShell, just type its relative path and press <Enter>. For example, type:
+
+* `./UpdateRepos` for a script located in the current directory; for scripts located in the current directory, teh `./` is compulsory
+* `./_scripts/UpdateRepo_IGLibScripts.ps1` for a script located in another directory
+
 ## Building .NET Projects in the Container Repository
 
+After cloning the source cod repositories by one of the cloning/updating scripts, the code can be built in several ways.
+
+Solutions (`.sln`) and project files (such as `.csproj`) can be built using the `dotnet` command-line tool (multi-platform). In order to do that, you need to install the [.NET SDK](https://dotnet.microsoft.com/en-us/download) on your computer.
+
+On MS Windows, one can use the [Visual Studio](https://visualstudio.microsoft.com/) IDE (integrated development enviroment). You may be eligible for the [free Community edition](https://visualstudio.microsoft.com/free-developer-offers/) if you are individual developer or when developing open source solutions. Building and running .NET applications is very easy in Visual Studio: open the solution or project file by double-clicking it, then use the context menu for building and running projects and solutions, or for modifying or adding source files.
+
+On other platform, you can use one of the cross-platform IDEs - the [JetBrains Rider](https://www.jetbrains.com/rider/), or [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit).
+
+In Visual Studio Code with C# Dev Kit extension:
+
+* Open the directory containing the solution file (`.sln`)
+* In the VS Code Activity Bar (the vertical bar on the left), right-click the "Explorer" icon (hover over icons to get their titles). This will open a panel showing directories and files
+* In Explorer, find the solution file (`.sln`) you want to open, right-click it, and select "Open Solution". This opens the Solution Explorer panel below the Explorer panel.
+* Use the Solution Explorer to browse projects and files.
+* You can build, run, and debug your projects using the built-in commands and launch configurations.
+
 ## Typical Workflows with this Repository
+
+A simple workflow using this container repository includes the following:
+
+* Clone a set of relevant repositories by using a group cloning/updating script.
+* Open source code in an appropriate integrated development environment (IDE)
+* Edit, build, run and test the code
+* Use Git (or the IDE's capabilities, if available) to commit changes and push them to a common remote repository
+* Run the cloning/updating scripts in order to pull contributions from other users from the remote repository
+* Repeat the cycle (from edit, build, ru and test) until the targeted tasks / features are complete
 
