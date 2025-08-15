@@ -172,3 +172,15 @@ A simple workflow using this container repository includes the following:
 * Run the cloning/updating scripts in order to pull contributions from other users from the remote repository
 * Repeat the cycle (from edit, build, ru and test) until the targeted tasks / features are complete
 
+A common scenario is that implementation of a feature requires coordinated changes across several source code repositories cloned in this container. In this case, the workflow may consist of the following:
+
+* Create dedicated feature branches in all affected repositories and psh them to the common remote repository
+  * It is good practice to name these branches the same across all source repositories
+* To simplify the workflow:
+  * Also create a feature branch with the same name in the container repository
+  * On this feature branch, update the cloning/updating scripts for the affected repositories, such that the checkout branch is sett to the corresponding feature branch; this enables the simple workflow, including running the cloning/updating scripts to pull changes from other developers from the common remote
+* Repeat cycles similar to the above simple workflow
+* Wen the feature is complete, create pull requests for the feature branches on all affected repositories (but not on the container repository)
+* When code reviews are done and approved, simultaneously merge changes in affected repository
+* Discard the feature branch on the container repository and switch to the main branch
+  * Finally, run teh group cloning/updating script; this will check out the updated main branches (with the new feature merged) from the repositories
