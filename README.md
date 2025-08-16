@@ -196,3 +196,9 @@ A common scenario is that implementation of a feature requires coordinated chang
 * When code reviews are done and approved, simultaneously merge changes in affected repository
 * Discard the feature branch on the container repository and switch to the main branch
   * Finally, run teh group cloning/updating script; this will check out the updated main branches (with the new feature merged) from the repositories
+
+## License
+
+© Copyright Igor Grešovnik.
+
+See [LICENSE.md](https://github.com/ajgorhoe/iglibmodules/blob/main/LICENSE.md) ([local version](./LICENSE.md)) for license information.
