@@ -1,6 +1,6 @@
 
-# Clones or updates the IGLib basic repositories in iglibmodules.
-Write-Host "`n`nCloning / updating basic IGLib repositories in iglibmodules ...`n"
+# Clones or updates the basic IGLib repositories in iglibmodules.
+Write-Host "`n`nCloning / updating BASIC IGLib repositories in iglibmodules ...`n"
 
 # Get the script directory such that relative paths can be resolved:
 $scriptPath = $MyInvocation.MyCommand.Path
