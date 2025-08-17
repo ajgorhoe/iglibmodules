@@ -1,6 +1,8 @@
 
-# Clones or updates the EXTENDED IGLib repositories in iglibmodules/.
-Write-Host "`n`nCloning / updating EXTENDED IGLib repositories in iglibmodules/ ..."
+# Clones or updates the web container and BASIC web repositories in 
+
+# iglibmodules/
+Write-Host "`n`nCloning / updating BASIC web repositories in iglibmodules/ ..."
 
 # Get the script directory such that relative paths can be resolved:
 $scriptPath = $MyInvocation.MyCommand.Path
@@ -9,22 +11,36 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 Write-Host "Script directory: $scriptDir"
 
+# Clone/update web container:
+
 # Write-Host "`n`nUpdating the Web container repository:`n" 
 & $(join-path $scriptDir "_scripts/web/UpdateRepo_web.ps1")
 
-Write-Host "`nUpdating nested web reposittories:`n"
 
-Write-host "`nupdating web/ajgorhoe.github.io/:"
+
+# Clone/update web repositories within web container:
+Write-Host "`nUpdating web repositories within the container:`n"
+
+Write-host "`nupdating web/ajgorhoe.github.io:"
 & $(Join-Path $scriptDir "web/UpdateRepo_ajgorhoe.github.io.ps1")
 
 
-Write-Host "`nUpdating web/ajgorhoe.github.io/IGLibFramework/:"
-& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateModule_IGLibFramework.ps1")
 
-# Write-Host "`nUpdating IGLibScriptsEXP:"
-# & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibScriptsEXP.ps1")
+# Updating nested web repositories within web/ajgorhoe.github.io:
+Write-Host "`nUpdating nested web repositories within web/ajgorhoe.github.io:`n"
+
+Write-Host "`nUpdating web/ajgorhoe.github.io/IGLibFramework:"
+& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_IGLibFramework.ps1")
+
+Write-Host "`nUpdating web/ajgorhoe.github.io/igor:"
+& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_igor.ps1")
+
+Write-Host "`nUpdating web/ajgorhoe.github.io/Inverse:"
+& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_igor.ps1")
+
+Write-Host "`nUpdating web/ajgorhoe.github.io/Inverse:"
+& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_Inverse.ps1")
 
 
-
-Write-Host "  ... updating EXTENDED repositoris in iglibmodules/ completed.`n`n"
+Write-Host "  ... updating BASIC WEB repositoris in iglibmodules/ completed.`n`n"
 
