@@ -11,9 +11,11 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 Write-Host "Script directory: $scriptDir"
 
+
+
 # Clone/update web container:
 
-# Write-Host "`n`nUpdating the Web container repository:`n" 
+Write-Host "`n`nUpdating the web CONTAINER repository:`n" 
 & $(join-path $scriptDir "_scripts/web/UpdateRepo_web.ps1")
 
 
@@ -30,16 +32,16 @@ Write-host "`nupdating web/ajgorhoe.github.io:"
 Write-Host "`nUpdating nested web repositories within web/ajgorhoe.github.io:`n"
 
 Write-Host "`nUpdating web/ajgorhoe.github.io/IGLibFramework:"
-& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_IGLibFramework.ps1")
+& $(Join-Path $scriptDir "web/ajgorhoe.github.io/UpdateRepo_IGLibFramework.ps1")
 
 Write-Host "`nUpdating web/ajgorhoe.github.io/igor:"
-& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_igor.ps1")
+& $(Join-Path $scriptDir "web/ajgorhoe.github.io/UpdateRepo_igor.ps1")
 
 Write-Host "`nUpdating web/ajgorhoe.github.io/Inverse:"
-& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_igor.ps1")
+& $(Join-Path $scriptDir "web/ajgorhoe.github.io/UpdateRepo_igor.ps1")
 
-Write-Host "`nUpdating web/ajgorhoe.github.io/Inverse:"
-& $(Join-Path $scriptDir "./web/ajgorhoe.github.io/UpdateRepo_Inverse.ps1")
+# Write-Host "`nUpdating web/ajgorhoe.github.io/Inverse:"
+# & $(Join-Path $scriptDir "web/ajgorhoe.github.io/UpdateRepo_Inverse.ps1")
 
 
 Write-Host "  ... updating BASIC WEB repositoris in iglibmodules/ completed.`n`n"
