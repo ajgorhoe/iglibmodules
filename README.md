@@ -199,6 +199,6 @@ A common scenario is that implementation of a feature requires coordinated chang
 
 ## License
 
-© Copyright Igor Grešovnik.
+Copyright © Igor Grešovnik.
 
 See [LICENSE.md](https://github.com/ajgorhoe/iglibmodules/blob/main/LICENSE.md) ([local version](./LICENSE.md)) for license information.
