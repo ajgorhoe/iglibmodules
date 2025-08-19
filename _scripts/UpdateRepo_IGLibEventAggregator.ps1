@@ -33,10 +33,10 @@ $global:CurrentRepo_Directory = "../IGLibEventAggregator/"
 $global:CurrentRepo_Ref = "main"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/IGLib.modules.IGLibEventAggregator.git"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = 
+$global:CurrentRepo_AddressSecondary =  "https://gitlab.com/ajgorhoe/IGLib.modules.IGLibEventAggregator"
 # Suspended BickBucket mirror (quota exceeded):
 # "https://ajgorhoe@bitbucket.org/ajgorhoe/iglib.modules.iglibeventaggregator.git"
-$global:CurrentRepo_RemoteSecondary = $null
+$global:CurrentRepo_RemoteSecondary = "remoteGitLab"
 # "remoteBitBucket"
 $global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/misc/iglib_modules/IGLibEventAggregator"
 $global:CurrentRepo_RemoteTertiary = "local"
