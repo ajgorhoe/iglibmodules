@@ -1,7 +1,23 @@
 
 # The _scripts/ directory (IGLib Modules' Container Repository)
 
-This repository contains scripts for cloning/updating repositories of the *new* IGLib modules.
+This repository contains scripts for cloning/updating repositories of the *new* IGLib modules. Scripts clone the following repositories:
+
+<https://github.com/ajgorhoe/IGLib.modules.IGLibCore>  
+<https://github.com/ajgorhoe/IGLib.modules.IGLibScripts>  
+<https://github.com/ajgorhoe/IGLib.modules.IGLibGraphics3D>  
+<https://github.com/ajgorhoe/IGLib.modules.IGLibScripting>  
+<https://github.com/ajgorhoe/IGLib.modules.IGLibScriptingCs>  
+<https://github.com/ajgorhoe/IGLib.modules.IGLibEventAggregator>  
+
+In addition, the following corresponding remotes are configured by these scripts:
+
+<https://gitlab.com/ajgorhoe/IGLib.modules.IGLibCore>  
+<https://gitlab.com/ajgorhoe/IGLib.modules.IGLibScripts>  
+<https://gitlab.com/ajgorhoe/IGLib.modules.IGLibGraphics3D>  
+<https://gitlab.com/ajgorhoe/IGLib.modules.IGLibScripting>  
+<https://gitlab.com/ajgorhoe/IGLib.modules.IGLibScriptingCs>  
+<https://gitlab.com/ajgorhoe/IGLib.modules.IGLibEventAggregator>  
 
 Scripts for legacy IGLib Framework's repositories are contained in the IGLibFramework/ subdirectory. Scripts for GitHub web pages are contained in the Web/ subdirectory.
 
