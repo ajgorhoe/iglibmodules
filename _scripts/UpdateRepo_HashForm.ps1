@@ -30,7 +30,7 @@ $UpdatingScriptPath = "./UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "../HashForm/"
-$global:CurrentRepo_Ref = "main"
+$global:CurrentRepo_Ref = "master"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/IGLib.apps.HashForm"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = $null
