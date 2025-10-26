@@ -11,10 +11,6 @@ Write-Host "`nUpdating BASIC IGLib repositories:`n"
 
 Write-Host "Script directory: $scriptDir"
 
-# Update learning repo as part of IGLibBasic:
-Write-Host "`nUpdating iglearn:"
-& $(Join-Path $scriptDir "_scripts/UpdateRepo_iglearn.ps1")
-
 Write-Host "`nUpdating IGLibCore:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibCore.ps1")
 
@@ -35,6 +31,12 @@ Write-Host "`nUpdating IGLibSandbox:"
 
 # Remark:
 # Updating IGLibEventAggregator moved to UpdateRepos_Extended.ps1
+
+# Update learning repo as part of IGLibBasic:
+Write-Host "`nUpdating iglearn:"
+& $(Join-Path $scriptDir "_scripts/UpdateRepo_iglearn.ps1")
+Write-Host "`nUpdating iglearn's embedded repos:"
+& $(Join-Path $scriptDir "iglearn/UpdateRepoGroup_OtherRepos.ps1")
 
 Write-Host "  ... updating basic repositoris in iglibmodules/ completed.`n`n"
 
