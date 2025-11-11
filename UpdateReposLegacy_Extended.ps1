@@ -18,10 +18,6 @@ Write-Host "Script directory: $scriptDir"
 
 Write-Host "`nUpdating extended IGLibFramework repositories:`n"
 
-# Moved to UpdateRepos_Basic.ps1
-# Write-Host "`nUpdating iglearn:"
-# & $(Join-Path $scriptDir "_scripts/UpdateRepo_iglearn.ps1")
-
 Write-Host "`nUpdating iglibapp:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_iglibapp.ps1")
 
