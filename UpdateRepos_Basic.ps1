@@ -29,6 +29,9 @@ Write-Host "`nUpdating IGLibGraphics3D:"
 Write-Host "`nUpdating IGLibSandbox:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibSandbox.ps1")
 
+Write-Host "`nUpdating IGLibApps:"
+& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibApps.ps1")
+
 # Remarks:
 # Updating IGLibEventAggregator moved to UpdateRepos_Extended.ps1
 # Updating iglearn & embedded repos moved to UpdateReposLrn.ps1

@@ -6,6 +6,10 @@
 /output1
 /output2
 
+# Directories below are for IGLib and legacy IGLib Framework repositories.
+# Each directory also has two additional variants, with suffices 1 and 2,
+# such that two copies of these directoried can be stored temporarily.
+
 # IGLibCore: The basic low level IGLib library.
 /IGLibCore
 /IGLibCore1
@@ -41,6 +45,11 @@
 /IGLibSandbox
 /IGLibSandbox1
 /IGLibSandbox2
+
+# IGLibApps: IGLib applications.
+/IGLibApps
+/IGLibApps1
+/IGLibApps2
 
 # IGLibEventAggregator: Simple event aggregator project, currently not in use 
 # but may be revived in some time the future.
