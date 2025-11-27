@@ -1,6 +1,17 @@
 
 
+# The Helix Toolkit (3D graphics library)
+# 818 MB
+# https://github.com/IOptLib/helix-toolkit
+# helix-toolkit
 /helix-toolkit
+
+
+# Demo application for robot arm, based on the Helix Toolkit
+# 24.6 MB
+# https://github.com/IOptLib/RobotArmHelix
+# https://github.com/Gabryxx7/RobotArmHelix
+RobotArmHelix
 
 
 

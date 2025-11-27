@@ -29,11 +29,11 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "./helix-toolkit/"
+$global:CurrentRepo_Directory = "./RobotArmHelix/"
 $global:CurrentRepo_Ref = $null
-$global:CurrentRepo_Address = "https://github.com/IOptLib/helix-toolkit"
+$global:CurrentRepo_Address = "https://github.com/IOptLib/RobotArmHelix"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = "https://github.com/helix-toolkit/helix-toolkit"
+$global:CurrentRepo_AddressSecondary = "https://github.com/Gabryxx7/RobotArmHelix"
 $global:CurrentRepo_RemoteSecondary = "remoteUpstream"
 $global:CurrentRepo_AddressTertiary = 
 $global:CurrentRepo_RemoteTertiary = $null
