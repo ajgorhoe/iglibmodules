@@ -33,10 +33,10 @@ $global:CurrentRepo_Directory = "./helix-toolkit/"
 $global:CurrentRepo_Ref = $null
 $global:CurrentRepo_Address = "https://github.com/IOptLib/helix-toolkit"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = 
-$global:CurrentRepo_RemoteSecondary = "remoteSecondary"
+$global:CurrentRepo_AddressSecondary = "https://github.com/IOptLib/helix-toolkit"
+$global:CurrentRepo_RemoteSecondary = "remoteUpstream"
 $global:CurrentRepo_AddressTertiary = 
-$global:CurrentRepo_RemoteTertiary = "remoteTertiary"
+$global:CurrentRepo_RemoteTertiary = $null
 $global:CurrentRepo_ThrowOnErrors = $false
 
 # End of custom section
