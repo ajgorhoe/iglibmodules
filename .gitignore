@@ -1,4 +1,13 @@
 
+
+/helix-toolkit
+
+
+
+#################################################################
+# 
+# Original ignores from the iglibmodules container repository:
+
 *.bak
 
 # output: output directory of the legacy IGLib frameworks
