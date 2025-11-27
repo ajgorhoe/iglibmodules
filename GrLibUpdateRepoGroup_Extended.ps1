@@ -1,6 +1,6 @@
 
 # Clones or updates the EXTENDED GrLib repositories.
-Write-Host "`n`nCloning / updating EXTENDED GrLib repositories ..."
+Write-Host "`n`nCloning / updating EXTENDED Graphic Lib. repositories ..."
 
 # Get the script directory such that relative paths can be resolved:
 $scriptPath = $MyInvocation.MyCommand.Path
