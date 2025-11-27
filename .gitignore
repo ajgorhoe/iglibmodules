@@ -11,7 +11,13 @@
 # 24.6 MB
 # https://github.com/IOptLib/RobotArmHelix
 # https://github.com/Gabryxx7/RobotArmHelix
-RobotArmHelix
+/RobotArmHelix
+
+
+# Stride - a free open source cross-platform C# game engine
+# 2 GB MB
+# https://github.com/stride3d
+/Stride
 
 
 

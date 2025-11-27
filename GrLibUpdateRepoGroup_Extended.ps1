@@ -15,8 +15,8 @@ Write-Host "Script directory: $scriptDir"
 Write-Host "`nUpdating EXTENDED Graphic Lib. repositories...`n"
 
 
-# Write-Host "`nUpdating HashForm:"
-# & $(Join-Path $scriptDir "_scripts/UpdateRepo_HashForm.ps1")
+Write-Host "`nUpdating Stride:"
+& $(Join-Path $scriptDir "_scripts/GrLibUpdateRepo_Stride.ps1")
 
 
 # Write-Host "`nUpdating Code Documentation repositories in _doc:"
