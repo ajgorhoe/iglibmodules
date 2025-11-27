@@ -19,6 +19,46 @@
 # https://github.com/stride3d
 /Stride
 
+# Evergine Sample demos:
+# https://github.com/EvergineTeam/Samples
+
+# Evergine Automotive Demo:
+# https://github.com/EvergineTeam/Automotive-Demo
+/Evergine_Sample_AutomotiveDemo
+
+# Evergine Runtime Lab:
+# https://github.com/EvergineTeam/EvergineRuntimeLab
+/Evergine_Sample_RuntimeLab
+
+# Evergine Gaussian Splatting Demo:
+# https://github.com/EvergineTeam/GaussianSplatting-Demo
+/Evergine_Sample_GaussianSplattingDemo
+
+# Evergine Dicom Demo:
+# https://github.com/EvergineTeam/Dicom-Demo
+/Evergine_Sample_DicomDemo
+
+# Evergine XR Sample:
+# https://github.com/EvergineTeam/XRSample
+/Evergine_Sample_XRSample
+
+# Evergine Digital Twin Demo:
+# https://github.com/EvergineTeam/DigitalTwin-Demo
+/Evergine_Sample_DigitalTwinDemo
+
+# Evergine Mixed Reality Toolkit:
+# https://github.com/EvergineTeam/MixedRealityToolkit
+/Evergine_Sample_MixedRealityToolkit
+
+# Evergine UI API Integrations:
+# https://github.com/EvergineTeam/UIWindowSystemsDemo
+/Evergine_Sample_UIWindowSystemsDemo
+
+
+
+
+
+
 
 
 #################################################################
