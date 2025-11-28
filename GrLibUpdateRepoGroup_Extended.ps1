@@ -45,6 +45,12 @@ Write-Host "`nUpdating Evergine UI Windows Systems Demo:"
 Write-Host "`nUpdating Evergine XR Sample:"
 & $(Join-Path $scriptDir "./GrLibUpdateRepo_Evergine_XRSample.ps1")
 
+Write-Host "`nUpdating Evergine ImGui Demo:"
+& $(Join-Path $scriptDir "./GrLibUpdateRepo_Evergine_ImGuiDemo.ps1")
+
+Write-Host "`nUpdating Evergine Low Level API Demo:"
+& $(Join-Path $scriptDir "./GrLibUpdateRepo_Evergine_LowLevelApiDemo.ps1")
+
 
 
 # Write-Host "`nUpdating Code Documentation repositories in _doc:"

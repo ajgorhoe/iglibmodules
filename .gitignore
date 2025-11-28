@@ -54,7 +54,13 @@
 # https://github.com/EvergineTeam/UIWindowSystemsDemo
 /Evergine_Sample_UIWindowSystemsDemo
 
+# Evergine Digital Low Level API Demo:
+# https://github.com/EvergineTeam/ImGui-Demo
+/Evergine_Sample_ImGuiDemo
 
+# Evergine Digital ImGui Demo:
+# https://github.com/EvergineTeam/LowLevelAPIDemo
+/Evergine_Sample_LowLevelAPIDemo
 
 
 
