@@ -35,8 +35,8 @@ $global:CurrentRepo_Address = "https://github.com/IOptLib/RobotArmHelix"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "https://github.com/Gabryxx7/RobotArmHelix"
 $global:CurrentRepo_RemoteSecondary = "remoteUpstream"
-$global:CurrentRepo_AddressTertiary = 
-$global:CurrentRepo_RemoteTertiary = $null
+$global:CurrentRepo_AddressTertiary = "git@github.com-IOptLib:IOptLib/RobotArmHelix"
+$global:CurrentRepo_RemoteTertiary = "remote_IOptLib"
 $global:CurrentRepo_ThrowOnErrors = $false
 
 # End of custom section
