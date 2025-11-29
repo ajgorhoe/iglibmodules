@@ -19,7 +19,7 @@ This branch contains customization of the `iglibmodules` repository for 3D graph
 7. Added scripts for updating the whole group of repositories involved: `GrLibUpdateRepoGroup_Basic.ps1` for the basic repositories, and `GrLibUpdateRepoGroup_Extended.ps1` for extended set with additional repositories (currently no repositories here, so it just runs the basic scripts, but additional repositories may be added in the future). These scripts were copied and adapted from `UpdateRepos_Basic.ps1` and `UpdateRepos_Extended.ps1`;
     * These group cloning / updating scripts are very handy because one can have all the work done with a single double-click (dependent on the system settings for running PowerShell scripts).
 8. As necessary, add additional scripts for updating/cloning repositories that are needed, and add calls to these scripts in the group updating scripts.
-
+    * I have so far also added updating/cloning scripts for [Stride 3D](https://github.com/stride3d/stride.git) and some [sample repositories](https://github.com/EvergineTeam/Samples) for [Evergine](https://github.com/EvergineTeam) ([home page](https://evergine.com/)), a very interesting 3D engine adapted to industrial applications.
 
 ## License
 
