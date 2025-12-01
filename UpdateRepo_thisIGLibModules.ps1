@@ -1,3 +1,9 @@
+
+# Updates the current container of repository containers to get newest
+# versions of scripts, which enables further updating of contained
+# container repositories and normal repositories (checking out correct 
+# branches,setting correct remotes).
+
 <#
     .SYNOPSIS
     Updates or clones a specific repository by calling UpdateOrCloneRepository.ps1 
@@ -30,7 +36,7 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "./"
-$global:CurrentRepo_Ref = "swrepos/GrLib/repoMain"
+$global:CurrentRepo_Ref = "swrepos/RecursiveIGLib/mainRecursiveIGLib"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules.git"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "https://gitlab.com/ajgorhoe/iglibmodules.git"
