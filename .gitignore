@@ -9,11 +9,17 @@
 # commit, tag or branch is checked out, which is convenient for comparisons.
 
 # Standard, empty iglibmodules repostory container. Contains scripts for
-# cloning and updating both the new IGLib ("Core") and 
+# cloning and updating both the new IGLib ("Core") and the legacy
+# IGLibFramework repositorie:
 /iglibmodules
 /iglibmodules1
 /iglibmodules2
 
+# Standard iglibmodules repository container, with new IGLibCore 
+# repositories automatically cloned:
+/iglibmodules_CORE
+/iglibmodules_CORE1
+/iglibmodules_CORE2
 
 # workspaceprojects/ and workspaceprojects_all/ contain, among the others,
 # testing material for IGLib. However, these directories are cloned two

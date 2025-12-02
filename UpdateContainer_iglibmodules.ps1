@@ -18,7 +18,7 @@
 #>
 
 Write-Host "`n`n======================================================="
-Write-Host "Updating/cloning a specific repository..."
+Write-Host "Updating/cloning iglibmodules container..."
 
 ########################################################################
 # Custom section (USER DEFINED):
