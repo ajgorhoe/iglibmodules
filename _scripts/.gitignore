@@ -16,9 +16,8 @@
 # repository. This also supprts having multiple versions where a different
 # commit, tag or branch is checked out, which is convenient for comparisons.
 
-# Standard, empty container of containers of repositories, baes on the
-# iglibmodules container, branch .
-# IGLibFramework repositorie:
+# Standard, empty container of containers of repositories, based on the
+# iglibmodules container, branch swrepos/RecursiveIGLib/mainRecursiveIGLib:
 /iglibmodules_Recursive
 /iglibmodules_Recursive1
 /iglibmodules_Recursive2
