@@ -16,7 +16,7 @@
     -DefaultFromVars to pick up the values from these global variables.
 	
 	When repository directory is specified as relative path, path is
-	resolved with the scrit directory as base path.
+	resolved with the script directory as base path.
 
     .NOTES
     Make sure UpdateOrCloneRepository.ps1 is accessible at the path specified in 
