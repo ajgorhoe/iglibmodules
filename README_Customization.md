@@ -1,17 +1,13 @@
 
-# Customizaion Branch `swrepos/RecursiveIGLib/mainRecursiveIGLib` - Container of Software Repository Containers
+# Customizaion Branch `swrepos/RecursiveOtherIG/mainRecursiveOtherIG` - Container of Software Repository Containers Losely Related to *IGLib*
 
-[This branch (`swrepos/RecursiveIGLib/mainRecursiveIGLib`)](https://github.com/ajgorhoe/iglibmodules/tree/swrepos/RecursiveIGLib/mainRecursiveIGLib) contains customization of the **[`iglibmodules` container repository](https://github.com/ajgorhoe/iglibmodules)** that serves as container of containers. It is used to **contain** and automate cloning and updating of **multiple repository containers**, each od which contains a set of software repositories and automates their cloning and updating. Container of software repository enables you to organize working clones of your software repository that you work on really easily.
+[This branch (`swrepos/RecursiveOtherIG/mainRecursiveOtherIG`)](https://github.com/ajgorhoe/iglibmodules/tree/swrepos/RecursiveOtherIG/mainRecursiveOtherIG) contains customization of the **[`iglibmodules` container repository](https://github.com/ajgorhoe/iglibmodules)** that serves as container of containers for repositories that are **losely related to [IGLib](https://github.com/ajgorhoe/IGLib.modules.IGLibCore)** (the Investigative Generic Library). It is used to **contain** and automate cloning and updating of **multiple repository containers**, each od which contains a set of software repositories and automates their cloning and updating.
 
 ## Use
 
-## Easy Customization
+## Customization
 
-It is easy to customize this branch and repository for your own purposes. If you need your own **container of containers**, just start from this branch (`swrepos/RecursiveIGLib/mainRecursiveIGLib`) and adapt cloning / updating scripts for your own repository containers from the existing ones.
-
-For your own **containers of software repositories**, you can take **[IOptLib's adaptation](https://github.com/IOptLib/iglibmodules)** on the **[branch `swrepos/GrLib/repoMain`](https://github.com/ajgorhoe/iglibmodules/tree/swrepos/GrLib/repoMain)**. In particular, see the [Customization Readme]() for that customization branch and customization steps should be very clear.
-
-Normally you can customize the container repository for your needs **within hours**, and the repository can be used on any platform where `PowerShell` can be installed (it is installed by default on Windows). The repository has a very small footprint and enables efficient cloning and updating of your repositories, groups of repositories and groups of groups of repositories.
+It is easy to customize this branch and repository for your own purposes. However, this purpose is better served by the [swrepos/RecursiveIGLib/mainRecursiveIGLib branch](https://github.com/ajgorhoe/iglibmodules/tree/swrepos/RecursiveIGLib/mainRecursiveIGLib). In particular, **see the [customization readme file](https://github.com/ajgorhoe/iglibmodules/blob/swrepos/RecursiveIGLib/mainRecursiveIGLib/README_Customization.md#easy-customization)** on  that branch.
 
 ## License
 
