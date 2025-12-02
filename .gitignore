@@ -36,9 +36,9 @@
 
 # Standard, empty container of containers of repositories, based on the
 # iglibmodules container, branch swrepos/RecursiveIGLib/mainRecursiveIGLib:
-/iglibmodules_Recursive
-/iglibmodules_Recursive1
-/iglibmodules_Recursive2
+/otherIG_Recursive
+/otherIG_Recursive1
+/otherIG_Recursive2
 
 
 
