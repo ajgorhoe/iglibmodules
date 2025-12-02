@@ -1,4 +1,11 @@
 
+# Some general files (added by IG):
+# Log files:
+*.log
+# Backup copies of edited text files:
+*.bak
+
+
 # REMARK
 # Some directories have multiple versions listed (e.g. iglibmodules/,
 # iglibmodules1/, iglibmodules2/). Usually, only the first version is 
@@ -15,11 +22,22 @@
 /iglibmodules1
 /iglibmodules2
 
-# Standard iglibmodules repository container, with new IGLibCore 
-# repositories automatically cloned:
+# Standard iglibmodules repository container, with new IGLib Core 
+# repositories automatically cloned within it:
 /iglibmodules_CORE
 /iglibmodules_CORE1
 /iglibmodules_CORE2
+
+# Standard iglibmodules repository container, with legacy IGLib Framework 
+# repositories automatically cloned within it:
+/iglibmodules_LEGACY
+/iglibmodules_LEGACY1
+/iglibmodules_LEGACY2
+
+
+
+
+
 
 # workspaceprojects/ and workspaceprojects_all/ contain, among the others,
 # testing material for IGLib. However, these directories are cloned two
