@@ -1,0 +1,26 @@
+
+# Some general files (added by IG):
+# Log files:
+*.log
+# Backup copies of edited text files:
+*.bak
+
+
+# REMARK
+# Some directories have multiple versions listed (e.g. 
+# iglibmodules_Recursive/, iglibmodules_Recursive1/, 
+# iglibmodules_Recursive2/). Usually, only the first version is 
+# actually checked out via the contained scripts, and other versions are
+# listed such that one can manually make copies with suffices "1", "2" in
+# order to perform some experimentation on different versions of the 
+# repository. This also supprts having multiple versions where a different
+# commit, tag or branch is checked out, which is convenient for comparisons.
+
+# Standard, empty container of containers of repositories, baes on the
+# iglibmodules container, branch .
+# IGLibFramework repositorie:
+/iglibmodules_Recursive
+/iglibmodules_Recursive1
+/iglibmodules_Recursive2
+
+
