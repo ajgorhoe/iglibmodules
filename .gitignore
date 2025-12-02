@@ -42,6 +42,14 @@
 
 
 
+# Container for some 3D graphics libraries (adapted by IOptLib), based on
+# the iglibmodules container, branch swrepos/GrLib/repoMain:
+/GraphicsLibs3D
+/GraphicsLibs3D1
+/GraphicsLibs3D2
+
+
+
 
 
 
