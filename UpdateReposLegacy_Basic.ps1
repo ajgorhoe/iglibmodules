@@ -1,5 +1,5 @@
 
-# Clones or updates the IGLib Frameworrk basic repositories in iglibmodules.
+# Clones or updates the basic IGLib Frameworrk repositories in iglibmodules.
 Write-Host "`n`nCloning / updating basic IGLib Framework repositories in iglibmodules ...`n"
 
 # Get the script directory such that relative paths can be resolved:
@@ -19,8 +19,8 @@ Write-Host "`nUpdating igsolutions:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igsolutions.ps1")
 
 
-# Finally, also update group of IGLib basic repositories:
-Write-Host "`nUpdating basic IGLibFramework repositories from UpdateReposOld_Basic.ps1:`n"
+# Finally, also update the group of IGLib basic repositories:
+Write-Host "`nUpdating basic IGLib repositories via UpdateRepos_Basic.ps1:`n"
 
 & $(join-path $scriptDir "UpdateRepos_Basic.ps1")
 
