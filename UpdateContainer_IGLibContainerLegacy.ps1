@@ -1,3 +1,7 @@
+
+# Clones / updates the legacy IGLib Framework's container, containing many
+# other (related) repositories
+
 <#
     .SYNOPSIS
     Updates or clones a specific repository by calling UpdateOrCloneRepository.ps1 
@@ -29,13 +33,13 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "iglibmodules/"
-$global:CurrentRepo_Ref = "main"
-$global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules.git"
+$global:CurrentRepo_Directory = "ws/"
+$global:CurrentRepo_Ref = "master"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibcontainer.git"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = "https://gitlab.com/ajgorhoe/iglibmodules.git"
+$global:CurrentRepo_AddressSecondary = "https://gitlab.com/ajgorhoe/iglibcontainer"
 $global:CurrentRepo_RemoteSecondary = "remoteGitLab"
-$global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/IGLibModules.git"
+$global:CurrentRepo_AddressTertiary = "d:\backup_sync\bk_code\git\ig\IGLibContainer\"
 $global:CurrentRepo_RemoteTertiary = "local"
 $global:CurrentRepo_ThrowOnErrors = $false
 
