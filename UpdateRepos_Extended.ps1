@@ -9,7 +9,7 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 Write-Host "Script directory: $scriptDir"
 
-# Write-Host "`n`nUpdating basic IGLib repositories:`n" # this output is already in script.
+# Calling the script for updating basic repositories:
 & $(join-path $scriptDir "UpdateRepos_Basic.ps1")
 
 Write-Host "`nUpdating EXTENDED IGLib repositories...`n"
@@ -38,5 +38,5 @@ Write-Host "`nUpdating _doc/CodeDocumentation:"
 
 
 
-Write-Host "  ... updating EXTENDED repositoris in iglibmodules/ completed.`n`n"
+Write-Host "  ... updating EXTENDED repositories in iglibmodules/ completed.`n`n"
 
