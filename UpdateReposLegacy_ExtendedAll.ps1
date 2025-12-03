@@ -1,5 +1,5 @@
 
-# Clones or updates the IGLib Framework ALL repositories in iglibmodules.
+# Clones or updates ALL IGLib Framework repositories in iglibmodules.
 Write-Host "`n`nCloning / updating ALL IGLib Framework repositories in iglibmodules ...`n"
 
 # Get the script directory such that relative paths can be resolved:
@@ -27,5 +27,5 @@ Write-Host "`nUpdating workspaceprojects_all:"
 
 
 
-Write-Host "  ... updating all IGLib Framework repositories complete.`n`n"
+Write-Host "  ... updating all IGLib Framework repositories is complete.`n`n"
 
