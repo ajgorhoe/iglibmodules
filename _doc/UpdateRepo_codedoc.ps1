@@ -30,11 +30,11 @@ $UpdatingScriptPath = "../_scripts/UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "codedoc/"
-$global:CurrentRepo_Ref = "main"
+$global:CurrentRepo_Ref = "swrepos/GrLib/repoMain"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/IGLib.workspace.doc.codedoc.git"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = "https://gitlab.com/ajgorhoe/iglib.workspace.codedoc.git"
-$global:CurrentRepo_RemoteSecondary = "remoteGitLab"
+$global:CurrentRepo_AddressSecondary = "git@github.com-IOptLib:IOptLib/codedoc.git"
+$global:CurrentRepo_RemoteSecondary = "remoteIOptLib"
 $global:CurrentRepo_AddressTertiary = "d:/backup_sync/bk_code/git/ig/workspace/doc/codedoc.git"
 $global:CurrentRepo_RemoteTertiary = "local"
 $global:CurrentRepo_ThrowOnErrors = $false
