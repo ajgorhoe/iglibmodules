@@ -3,8 +3,6 @@
 
 [This branch (`swrepos/RecursiveOtherIG/mainRecursiveOtherIG`)](https://github.com/ajgorhoe/iglibmodules/tree/swrepos/RecursiveOtherIG/mainRecursiveOtherIG) contains customization of the **[`iglibmodules` container repository](https://github.com/ajgorhoe/iglibmodules)** that serves as container of containers for repositories that are **losely related to [IGLib](https://github.com/ajgorhoe/IGLib.modules.IGLibCore)** (the Investigative Generic Library). It is used to **contain** and automate cloning and updating of **multiple repository containers**, each od which contains a set of software repositories and automates their cloning and updating.
 
-## Use
-
 ## Customization
 
 It is easy to customize this branch and repository for your own purposes. However, this purpose is better served by the [swrepos/RecursiveIGLib/mainRecursiveIGLib branch](https://github.com/ajgorhoe/iglibmodules/tree/swrepos/RecursiveIGLib/mainRecursiveIGLib). In particular, **see the [customization readme file](https://github.com/ajgorhoe/iglibmodules/blob/swrepos/RecursiveIGLib/mainRecursiveIGLib/README_Customization.md#easy-customization)** on  that branch.
