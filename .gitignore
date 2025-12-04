@@ -6,6 +6,10 @@
 # helix-toolkit
 /helix-toolkit
 
+Customized helix-toolkit such that it can be used in RobotArmHelix.
+/helix-toolkit-forRobotArm
+/helix-toolkit-forRobotArm1
+
 
 # Demo application for robot arm, based on the Helix Toolkit
 # 24.6 MB
