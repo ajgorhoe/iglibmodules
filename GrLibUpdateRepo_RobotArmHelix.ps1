@@ -29,7 +29,7 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "./RobotArmHelix/RobotArmHelix/"
+$global:CurrentRepo_Directory = "./RobotArmHelix/"
 $global:CurrentRepo_Ref = "swrepos/GrLib/repoMain"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/RobotArmHelix"
 $global:CurrentRepo_Remote = "origin"
