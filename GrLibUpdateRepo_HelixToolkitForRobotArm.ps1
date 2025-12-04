@@ -29,16 +29,17 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "./helix-toolkit/"
-$global:CurrentRepo_Ref = "a2d5a244112a392b7570c8be9eaf1245f5112fc9"
+$global:CurrentRepo_Directory = "./helix-toolkit-forRobotArm/"
+$global:CurrentRepo_Ref = "7049faf49a52a5455c4dbfd0fd0bc2d08db09b11"
+
+# Commit 7049faf49a52a5455c4dbfd0fd0bc2d08db09b11: August 18, 2017.
+
+# "a2d5a244112a392b7570c8be9eaf1245f5112fc9"
 # commit a2d5a244112a392b7570c8be9eaf1245f5112fc9:
 # Author: Lunci <holance@users.noreply.github.com> Date: 8/7/2017 3:20:10 AM
 # Message: Merge pull request #528 from holance/develop
 
-Use ThreadStatic to reuse temp vertex array in same thread
-
-
-$global:CurrentRepo_Address = "https://github.com/IOptLib/helix-toolkit"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/helix-toolkit"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "https://github.com/helix-toolkit/helix-toolkit"
 $global:CurrentRepo_RemoteSecondary = "remoteUpstream"
