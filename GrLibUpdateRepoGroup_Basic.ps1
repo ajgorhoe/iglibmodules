@@ -11,11 +11,11 @@ $scriptFilename = [System.IO.Path]::GetFileName($scriptPath)
 
 Write-Host "Script directory: $scriptDir"
 
+Write-Host "`nUpdating RobotArmHelix:"
+& $(Join-Path $scriptDir "./GrLibUpdateRepoGroup_RobotArmHelix.ps1")
+
 Write-Host "`nUpdating Helix Toolkit:"
 & $(Join-Path $scriptDir "./GrLibUpdateRepo_HelixToolkit.ps1")
-
-Write-Host "`nUpdating RobotArmHelix:"
-& $(Join-Path $scriptDir "./GrLibUpdateRepo_RobotArmHelix.ps1")
 
 
 
