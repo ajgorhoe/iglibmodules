@@ -31,7 +31,7 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 
 $global:CurrentRepo_Directory = "./RobotArmHelix/RobotArmHelix/"
 $global:CurrentRepo_Ref = $null
-$global:CurrentRepo_Address = "https://github.com/IOptLib/RobotArmHelix"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/RobotArmHelix"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "https://github.com/Gabryxx7/RobotArmHelix"
 $global:CurrentRepo_RemoteSecondary = "remoteUpstream"
