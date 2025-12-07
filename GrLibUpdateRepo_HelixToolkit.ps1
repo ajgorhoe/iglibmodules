@@ -31,11 +31,12 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 
 $global:CurrentRepo_Directory = "./helix-toolkit/"
 $global:CurrentRepo_Ref = $null
-$global:CurrentRepo_Address = "https://github.com/IOptLib/helix-toolkit"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/helix-toolkit"
 $global:CurrentRepo_Remote = "origin"
 $global:CurrentRepo_AddressSecondary = "https://github.com/helix-toolkit/helix-toolkit"
 $global:CurrentRepo_RemoteSecondary = "remoteUpstream"
 $global:CurrentRepo_AddressTertiary = 
+# https://github.com/ioptlib/helix-toolkit
 $global:CurrentRepo_RemoteTertiary = $null
 $global:CurrentRepo_ThrowOnErrors = $false
 
