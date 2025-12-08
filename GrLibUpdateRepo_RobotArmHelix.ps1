@@ -31,11 +31,17 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 
 $global:CurrentRepo_Directory = "./RobotArmHelix/"
 $global:CurrentRepo_Ref = "swrepos/GrLib/repoMain"
-$global:CurrentRepo_Address = "https://github.com/ajgorhoe/RobotArmHelix"
+$global:CurrentRepo_Address = "https://github.com/ajgorhoe/RobotArmHelix_ManualClone"
+# Fork:
+# "https://github.com/ajgorhoe/RobotArmHelix"
 $global:CurrentRepo_Remote = "origin"
-$global:CurrentRepo_AddressSecondary = "https://github.com/Gabryxx7/RobotArmHelix"
+$global:CurrentRepo_AddressSecondary = $null
+# Original repository:
+# "https://github.com/Gabryxx7/RobotArmHelix"
 $global:CurrentRepo_RemoteSecondary = "remoteUpstream"
-$global:CurrentRepo_AddressTertiary = "git@github.com-IOptLib:IOptLib/RobotArmHelix"
+$global:CurrentRepo_AddressTertiary = $null
+# IOptLib user's push address to RobotArmHelix
+# "git@github.com-IOptLib:IOptLib/RobotArmHelix"
 $global:CurrentRepo_RemoteTertiary = "remote_IOptLib"
 $global:CurrentRepo_ThrowOnErrors = $false
 
