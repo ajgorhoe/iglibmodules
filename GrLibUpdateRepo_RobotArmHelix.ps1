@@ -30,7 +30,8 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 #    in the same order as that script's parameters:
 
 $global:CurrentRepo_Directory = "./RobotArmHelix/"
-$global:CurrentRepo_Ref = "swrepos/GrLib/repoMain"
+$global:CurrentRepo_Ref = "main"
+# Ref from the fork: "swrepos/GrLib/repoMain"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/RobotArmHelix_ManualClone"
 # Fork:
 # "https://github.com/ajgorhoe/RobotArmHelix"
