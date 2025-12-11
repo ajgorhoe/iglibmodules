@@ -5,10 +5,13 @@
 # https://github.com/IOptLib/helix-toolkit
 # helix-toolkit
 /helix-toolkit
+/helix-toolkit1
+/helix-toolkit2
 
 # Customized helix-toolkit such that it can be used in RobotArmHelix.
 /helix-toolkit-forRobotArm
 /helix-toolkit-forRobotArm1
+/helix-toolkit-forRobotArm2
 
 
 # Demo application for robot arm, based on the Helix Toolkit
@@ -17,6 +20,7 @@
 # https://github.com/Gabryxx7/RobotArmHelix
 /RobotArmHelix
 /RobotArmHelix1
+/RobotArmHelix2
 
 
 # Stride - a free open source cross-platform C# game engine
