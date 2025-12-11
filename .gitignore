@@ -28,8 +28,10 @@
 /iglibmodules_anka1
 /iglibmodules_anka2
 
-# Nested (2nd level) container of containers:
-/modRecursiveNESTED2nd
-/modRecursiveNESTED2nd
-/modRecursiveNESTED2nd
+# Nested (2nd level) container of containers, from repo
+# https://github.com/ajgorhoe/iglibmodules.gi,
+# branch swrepos/RecursiveIGLib/mainRecursiveIGLib:
+/modulesRecursiveInOTHERSNested2nd
+/modulesRecursiveInOTHERSNested2nd1
+/modulesRecursiveInOTHERSNested2nd2
 

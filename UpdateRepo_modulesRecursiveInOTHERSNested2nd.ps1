@@ -29,7 +29,7 @@ $UpdatingScriptPath = "./_scripts/UpdateOrCloneRepository.ps1"
 # Define parameter variables for UpdateOrCloneRepository.ps1
 #    in the same order as that script's parameters:
 
-$global:CurrentRepo_Directory = "modRecursiveNESTED2nd/"
+$global:CurrentRepo_Directory = "modulesRecursiveInOTHERSNested2nd/"
 $global:CurrentRepo_Ref = "swrepos/RecursiveIGLib/mainRecursiveIGLib"
 $global:CurrentRepo_Address = "https://github.com/ajgorhoe/iglibmodules.git"
 $global:CurrentRepo_Remote = "origin"
