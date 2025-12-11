@@ -3,8 +3,12 @@
 /CodeDocumentation
 /CodeDocumentation1
 
+# Additional copies of cloned directories that are ignored:
+
 /codedoc1
 /codedoc2
 
 /codedoc_resources1
 /codedoc_resources2
+# The new codedoc_resources directory:
+/codedoc_resources_25_12
