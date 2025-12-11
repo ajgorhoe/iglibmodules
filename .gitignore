@@ -34,12 +34,19 @@
 /iglibmodules_LEGACY1
 /iglibmodules_LEGACY2
 
-# Standard, empty container of containers of repositories, based on the
-# iglibmodules container, branch swrepos/RecursiveIGLib/mainRecursiveIGLib:
+# The other empty container of containers of repositories, based on the
+# iglibmodules container, branch 
+# swrepos/RecursiveOtherIG/mainRecursiveOtherIG:
 /otherIG_Recursive
 /otherIG_Recursive1
 /otherIG_Recursive2
 
+
+# Standard, NESTED empty container of containers of repositories, based on the
+# iglibmodules container, branch swrepos/RecursiveIGLib/mainRecursiveIGLib:
+/recursiveNESTED2nd
+/recursiveNESTED2nd
+/recursiveNESTED2nd
 
 
 # Container for some 3D graphics libraries (adapted by IOptLib), based on
