@@ -1,5 +1,5 @@
 
-# Clones or updates the IGLib Framework EXTENDED repositories in iglibmodules.
+# Clones or updates EXTENDED IGLib Framework repositories in iglibmodules.
 Write-Host "`n`nCloning / updating EXTENDED IGLib Framework repositories in iglibmodules ...`n"
 
 # Get the script directory such that relative paths can be resolved:
@@ -37,5 +37,5 @@ Write-Host "`nUpdating igtest:"
 & $(Join-Path $scriptDir "_scripts/IGLibFramework/UpdateRepo_igtest.ps1")
 
 
-Write-Host "  ... updating extended IGLib Framework repositories complete.`n`n"
+Write-Host "  ... updating extended IGLib Framework repositories has completed.`n`n"
 

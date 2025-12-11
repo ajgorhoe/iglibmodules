@@ -33,8 +33,8 @@ Write-Host "`nUpdating IGLibApps:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibApps.ps1")
 
 # Remarks:
-# Updating IGLibEventAggregator moved to UpdateRepos_Extended.ps1
-# Updating iglearn & embedded repos moved to UpdateReposLrn.ps1
+# Updating IGLibEventAggregator was moved to UpdateRepos_Extended.ps1
+# Updating iglearn & embedded repos was moved to UpdateReposLrn.ps1
 
 
 # # Update learning repo as part of IGLibBasic:
@@ -43,5 +43,5 @@ Write-Host "`nUpdating IGLibApps:"
 # Write-Host "`nUpdating iglearn's embedded repos:"
 # & $(Join-Path $scriptDir "iglearn/UpdateRepoGroup_OtherRepos.ps1")
 
-Write-Host "  ... updating basic repositoris in iglibmodules/ completed.`n`n"
+Write-Host "  ... updating basic repositories in iglibmodules/ completed.`n`n"
 
