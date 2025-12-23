@@ -122,6 +122,10 @@
 /web1
 /web2
 
+# IGLib Wiki:
+/wiki.iglib
+/wiki.iglib1
+/wiki.iglib2
 
 # workspaceprojects/ and workspaceprojects_all/ contain, among the others,
 # testing material for IGLib. However, these directories are cloned two
