@@ -87,6 +87,12 @@
 /VTK1
 /VTK2
 
+# ActiViz old source repository (new versions are not open source), 24 MB:
+# .NET wrappers for VTK. https://www.kitware.eu/activiz/
+# https://github.com/dearman/activizdotnet
+/VTK_activizdotnet
+/VTK_activizdotnet1
+/VTK_activizdotnet2
 
 
 #################################################################
