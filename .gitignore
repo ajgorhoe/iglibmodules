@@ -28,6 +28,7 @@
 # https://github.com/stride3d
 /Stride
 
+######################################################
 # Evergine Sample demos:
 # https://github.com/EvergineTeam/Samples
 
@@ -72,7 +73,19 @@
 /Evergine_Sample_LowLevelAPIDemo
 
 
+######################################################
+# VTK & ActiViz:
+# https://www.kitware.eu/platforms/#VTK
+# https://www.kitware.eu/activiz/
+# Additional info on IGLib Wiki (private repository):
+# https://github.com/ajgorhoe/wiki.IGLib/blob/main/IGLib/developmentareas/graphics3d/VtkComparison/VtkStateAndComparison.md
 
+# VTK Source (C++), 660 MB:
+# https://github.com/Kitware/VTK
+# https://gitlab.kitware.com/vtk/vtk (original)
+/VTK
+/VTK1
+/VTK2
 
 
 
