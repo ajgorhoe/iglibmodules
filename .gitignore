@@ -94,6 +94,16 @@
 /VTK_activizdotnet1
 /VTK_activizdotnet2
 
+# VTK Examples, 3.3 GB
+# Warning: .NET examples are very badly maintained and would work with significant 
+# investment
+# Warning: GitLab remote contains 
+/VTK_examples
+/VTK_examples1
+/VTK_examples2
+
+
+
 
 #################################################################
 # 
