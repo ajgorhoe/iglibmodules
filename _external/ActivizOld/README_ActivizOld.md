@@ -10,6 +10,14 @@ The only available **Activiz source** code repository I have found is [dearman/a
 In the legacy IGLib Framework I use binaries that I have recorded long ago, and are included in the [IGLib base repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib) - see the [containing directory of the repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended) or [containing directory on a particular branch](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/feature/25_12_26_NumericRearrangement/externalextended) where the directory existed dor sure.
 
 
+For the purpose of **transferring some ActiViz-based 3D plotting tools** to the new IGLib, I have put the above mentioned and other ActiViz binaries into separate repositories, such that they can be easily cloned and referenced:
+
+* [ActiViz](https://github.com/ajgorhoe/ActivizOld-ActiViz) (from legacy [iglib/externalextended/ActiViz](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended/ActiViz))
+* [ActiViz_5.6.1_x86](https://github.com/ajgorhoe/ActivizOld-ActiViz_5.6.1_x86) (from legacy [iglib/externalextended/ActiViz_5.6.1_x86](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended/ActiViz_5.6.1_x86))
+* [ActiViz_5.8.0_x86](https://github.com/ajgorhoe/ActivizOld-ActiViz_5.8.0_x86) (from legacy [iglib/externalextended/ActiViz_5.8.0_x86](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended/ActiViz_5.8.0_x86))
+
+
+
 
 
 
