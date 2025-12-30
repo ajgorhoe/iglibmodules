@@ -1,0 +1,5 @@
+
+# `_external/README_scripts_external` Subdirectory of the `iglibcontainer` Repository
+
+This directory contains cloning / updating scripts for external repositories used by various modules that are managed in the current container repository. Usually, these scripts are already contained in the `scripts/` subdirectories of individual modules (repositories), such as [IGLibCore/scripts](https://github.com/ajgorhoe/IGLib.modules.IGLibCore/tree/main/scripts) ([local](../../IGLibCore/scripts/)), [IGLibGraphics3D/scripts](https://github.com/ajgorhoe/IGLib.modules.IGLibGraphics3D/tree/main/scripts) ([local](../../IGLibGraphics3D/scripts/)), [IGLibScripting/scripts](https://github.com/ajgorhoe/IGLib.modules.IGLibScripting/tree/main/scripts) ([local](../../IGLibScripting/scripts/)),
+[IGLibScriptingCs/scripts](https://github.com/ajgorhoe/IGLib.modules.IGLibScriptingCs/tree/main/scripts) ([local](../../IGLibScriptingCs/scripts/)), [IGLibSandbox/scripts](https://github.com/ajgorhoe/IGLib.modules.IGLibSandbox/tree/main/scripts) ([local](../../IGLibSandbox/scripts/)).
