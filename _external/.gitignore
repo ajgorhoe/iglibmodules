@@ -1,11 +1,21 @@
 
 
+# Math.NET Numerics, numerical library for .NET:
+# Clone size: 175 MB
+# https://github.com/mathnet/mathnet-numerics
+# https://github.com/ajgorhoe/mathnet-numerics - my clone
+# https://numerics.mathdotnet.com/ - home page (documentation, contribution, etc.)
+/mathnet-numerics
+/mathnet-numerics1
+/mathnet-numerics2
+
+
 # Jint (JavaScript Interpreter):
+# Clone size: 38 MB
 # Original repo:
 # 
 # My manual clone:
 # 
-# Size: 38 MB
 #   source directories: 10 MB
 #   .git/: 28 MB
 /Jint
