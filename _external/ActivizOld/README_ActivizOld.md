@@ -7,8 +7,14 @@ See also:
 
 The only available **Activiz source** code repository I have found is [dearman/activizdotnet](https://github.com/dearman/activizdotnet) ([my fork](https://github.com/ajgorhoe/activizdotnet)), but it is **not very useful**. The link provided in the readme file that should contain binaries does not work, but binaries are critical for ActiViz to work.
 
-In the legacy IGLib Framework I use binaries that I have recorded long ago, and are included in the [IGLib base repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib) - see the [containing directory of the repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended) or [containing directory on a particular branch](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/feature/25_12_26_NumericRearrangement/externalextended) where the directory existed dor sure.
+There are two useful **VTK examples** repositories, which also include C# examples based on ActiViz. One repository is for old VTK versions when open source ActiViz was still available (up to 2021), and the other is from about 2021 on.
 
+The repositories are:
+
+* [VTKExamplesOld](https://github.com/lorensen/VTKExamples) - old version, the last commit is from March 2021
+* [VTKExamplesOld](https://github.com/lorensen/VTKExamples) - new version, the initial commit is from November 2020 and the most recent commit is from January 2024.
+
+In the legacy IGLib Framework I use binaries that I have recorded long ago, and are included in the [IGLib base repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib) - see the [containing directory of the repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended) or [containing directory on a particular branch](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/feature/25_12_26_NumericRearrangement/externalextended) where the directory existed dor sure.
 
 For the purpose of **transferring some ActiViz-based 3D plotting tools** to the new IGLib, I have put the above mentioned and other ActiViz binaries into separate repositories, such that they can be easily cloned and referenced:
 
