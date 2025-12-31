@@ -11,8 +11,8 @@ There are two useful **VTK examples** repositories, which also include C# exampl
 
 The repositories are:
 
-* [VTKExamplesOld](https://github.com/lorensen/VTKExamples) - old version, the last commit is from March 2021
-* [VTKExamplesOld](https://github.com/lorensen/VTKExamples) - new version, the initial commit is from November 2020 and the most recent commit is from January 2024.
+* [VTKExamplesOld](https://github.com/lorensen/VTKExamples) - old version, the last commit is from March 2021, C# examples are in `src/CSharp/`
+* [VTKExamplesOld](https://github.com/lorensen/VTKExamples) - new version, the initial commit is from November 2020 and the most recent commit is from January 2024, C# examples are in `site/CSharp/`
 
 In the legacy IGLib Framework I use binaries that I have recorded long ago, and are included in the [IGLib base repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib) - see the [containing directory of the repository](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/master/externalextended) or [containing directory on a particular branch](https://github.com/ajgorhoe/IGLib.workspace.base.iglib/tree/feature/25_12_26_NumericRearrangement/externalextended) where the directory existed dor sure.
 
