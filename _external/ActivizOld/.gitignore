@@ -28,3 +28,17 @@
 /dearman_ActiViz_25_122
 
 
+# VTK Examples, including C# examples based on ActiViz:
+
+# Old VTK Examples:
+# Clone size: 2.3 GB
+# https://github.com/lorensen/VTKExamples
+/VTKExamplesOld
+
+
+# New VTK Examples:
+# Clone size: 2.3 GB
+# https://github.com/lorensen/VTKExamples
+/VTKExamples
+
+
