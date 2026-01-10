@@ -1,7 +1,7 @@
 
 # IGLib Restricted Use License
 
-Copyright (c) Igor Grešovnik
+Copyright © Igor Grešovnik
 
 This license governs use of the accompanying software, documents, imagees, and other resources in binary and text forms. If you use the software or repository, you accept this license. If you do not accept the license, do not use the software.
 

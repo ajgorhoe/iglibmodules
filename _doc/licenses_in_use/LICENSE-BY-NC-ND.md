@@ -1,5 +1,5 @@
 
-© Igor Grešovnik. This software is licensed under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) ([legal code](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)).
+Copyright © Igor Grešovnik. This software is licensed under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) ([legal code](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)).
 
 ## Attribution-NonCommercial-NoDerivatives 4.0 International
 
