@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) Igor Grešovnik
+Copyright © Igor Grešovnik
 
 All rights reserved.
 

@@ -1,16 +1,31 @@
 
 
+# Math.NET Numerics, numerical library for .NET:
+# Clone size: 175 MB
+# https://github.com/mathnet/mathnet-numerics
+# https://github.com/ajgorhoe/mathnet-numerics - clone for IGLib
+# https://numerics.mathdotnet.com/ - home page (documentation, contribution, etc.)
+/mathnet-numerics
+/mathnet-numerics1
+/mathnet-numerics2
+
+
 # Jint (JavaScript Interpreter):
-# Original repo:
-# 
-# My manual clone:
-# 
-# Size: 38 MB
-#   source directories: 10 MB
-#   .git/: 28 MB
+# Clone size: 38 MB
+# https://github.com/sebastienros/jint
 /Jint
 /Jint1
 /Jint11
+
+# Helix Toolkit :
+# Clone size: 820 GB
+# https://github.com/helix-toolkit/helix-toolkit
+# https://github.com/ajgorhoe/helix-toolkit - clone for IGLib
+# https://docs.helix-toolkit.org/en/latest/ - documentation
+/helix-toolkit
+/helix-toolkit1
+/helix-toolkit2
+
 
 # WestWind Scripting:
 # Original repo:
