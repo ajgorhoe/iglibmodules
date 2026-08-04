@@ -47,6 +47,10 @@
 /IGLibFinance1
 /IGLibFinance2
 
+# IGLibData: test data or application data for IGLib applications
+/IGLibData
+/IGLibData1
+/IGLibData2
 
 # IGLibSandbox: The development sandbox for IGLib libraries.
 /IGLibSandbox
