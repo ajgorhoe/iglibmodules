@@ -14,6 +14,9 @@ Write-Host "Script directory: $scriptDir"
 
 Write-Host "`nUpdating EXTENDED IGLib repositories...`n"
 
+Write-Host "`nUpdating IGLibData:"
+& $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibData.ps1")
+
 Write-Host "`nUpdating IGLibEventAggregator:"
 & $(Join-Path $scriptDir "_scripts/UpdateRepo_IGLibEventAggregator.ps1")
 
